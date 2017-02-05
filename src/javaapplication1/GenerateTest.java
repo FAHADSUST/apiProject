@@ -94,11 +94,20 @@ public class GenerateTest {
             "December"};
         
         int startRange = 0;
+        int yearID = 0;
         int albumID = 0;
         int songID = 0;
         String url = "{\"albumList\":[";
-        
+        String prevYear = "";
         while (startDate.isBefore(endDate)){
+            String dayOfYaer = ""+startDate.getYear();
+            
+            if(!prevYear.equals(dayOfYaer))
+            {
+                url += "{\"yearID\":\""+yearID+"\", \"yearName\":\"" +"YEAR-"+dayOfYaer +"\", \"monthList\":[";
+                yearID++;
+            }
+            
                 String dayOfMonth = ""+monthStr[startDate.getMonthOfYear()-1];
                 url += "{\"albumID\":\""+albumID+"\", \"albumName\":\"" +"Month-"+dayOfMonth +"\", \"songList\":["; //+"Month-"+startDate.dayOfMonth() +"\"},";
                 //System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
@@ -114,13 +123,6 @@ public class GenerateTest {
                         artist = "";
                         composer = "";
                         imageUrl = "http://i.dailymail.co";
-                        
-
-    //                    String path;
-    //	long duration;
-    //	long albumId;
-    //	String composer;
-    //        String imageUrl;
 
                         url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+date +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
@@ -141,7 +143,12 @@ public class GenerateTest {
                 url = url.substring(0, url.length() - 1) +"], \"songListRange\":\""+startRange +"-"+ (songID-1) +"\"},";
                 
                 startRange = 0;
-            
+                
+                if(!prevYear.equals(dayOfYaer))
+                {
+                    url = url.substring(0, url.length() - 1) +"]},";
+                    prevYear = dayOfYaer;
+                }
         }
         
         url = url.substring(0, url.length() - 1) +"]}";
