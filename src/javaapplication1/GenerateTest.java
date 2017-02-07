@@ -105,6 +105,7 @@ public class GenerateTest {
             if(!prevYear.equals(dayOfYaer))
             {
                 url += "{\"yearID\":\""+yearID+"\", \"yearName\":\"" +"YEAR-"+dayOfYaer +"\", \"monthList\":[";
+                prevYear = ""+startDate.getYear();
                 yearID++;
             }
             
@@ -144,14 +145,14 @@ public class GenerateTest {
                 
                 startRange = 0;
                 
-                if(!prevYear.equals(dayOfYaer))
+                if(!prevYear.equals(""+startDate.getYear()))
                 {
                     url = url.substring(0, url.length() - 1) +"]},";
-                    prevYear = dayOfYaer;
+                    //prevYear = dayOfYaer;
                 }
         }
         
-        url = url.substring(0, url.length() - 1) +"]}";
+        url = url.substring(0, url.length() - 1) +"]}]}";
         System.out.println(url);
         
         File file = new File("C:\\Users\\Fahad-PC\\Documents\\NetBeansProjects\\JavaApplication1\\filename.txt");
