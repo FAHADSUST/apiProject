@@ -122,9 +122,9 @@ public class GenerateTest {
                         String date = startDate.getYear()+"-" + startDate.getMonthOfYear()+ "-" + startDate.getDayOfMonth();
                         //http://dl.bhoot-fm.com/Bhoot-FM_2017-01-13_(Bhoot-FM.com).mp3
                         path = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                        artist = "";
-                        composer = "";
-                        imageUrl = "http://i.dailymail.co";
+                        artist = "Rasel";
+                        composer = "Radio";
+                        imageUrl = "http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
                         url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+date +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
