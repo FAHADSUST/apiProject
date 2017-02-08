@@ -118,8 +118,11 @@ public class GenerateTest {
                     if ( startDate.getDayOfWeek() == DateTimeConstants.FRIDAY ){
                         fridays.add(startDate);
                         reachedAFriday = true;
-
-                        String date = startDate.getYear()+"-" + startDate.getMonthOfYear()+ "-" + startDate.getDayOfMonth();
+                        
+                        String MothWithTwoDigit = String.format("%02d", startDate.getMonthOfYear());
+                        String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
+                        
+                        String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
                         //http://dl.bhoot-fm.com/Bhoot-FM_2017-01-13_(Bhoot-FM.com).mp3
                         path = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "Rasel";
