@@ -50,7 +50,7 @@ public class GenerateTest {
     public static void main(String[] args) throws IOException
     {
         String start = "08/06/2011";
-        String end = "12/09/2012";
+        String end = "12/09/2016";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
         DateTime startDate = pattern.parseDateTime(start);
         DateTime endDate = pattern.parseDateTime(end);
@@ -120,7 +120,8 @@ public class GenerateTest {
                         reachedAFriday = true;
 
                         String date = startDate.getYear()+"-" + startDate.getMonthOfYear()+ "-" + startDate.getDayOfMonth();
-                        path = "http://Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
+                        //http://dl.bhoot-fm.com/Bhoot-FM_2017-01-13_(Bhoot-FM.com).mp3
+                        path = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "";
                         composer = "";
                         imageUrl = "http://i.dailymail.co";
