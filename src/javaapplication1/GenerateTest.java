@@ -51,7 +51,7 @@ public class GenerateTest {
     public static void main(String[] args) throws IOException
     {
         String start = "08/06/2011";
-        String end = "12/09/2016";
+        String end = "12/09/2017";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
         DateTime startDate = pattern.parseDateTime(start);
         DateTime endDate = pattern.parseDateTime(end);
@@ -140,8 +140,8 @@ public class GenerateTest {
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
                         //http://dl.bhoot-fm.com/Bhoot-FM_2017-01-13_(Bhoot-FM.com).mp3
                         path = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                        artist = "Rasel";
-                        composer = "Radio";
+                        artist = "Bhoot-Fm";
+                        composer = "Radio-Foorti";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
                         url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+date +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
