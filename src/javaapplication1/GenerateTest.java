@@ -50,11 +50,11 @@ public class GenerateTest {
     //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
     public static void main(String[] args) throws IOException
     {
-        String start = "08/06/2011";
-        String end = "12/09/2017";
+        String start = "12/08/2010";
+        String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = pattern.parseDateTime(start);
-        DateTime endDate = pattern.parseDateTime(end);
+        DateTime startDate = new DateTime(2010, 8, 13, 0, 0, 0, 0);//pattern.parseDateTime(start);
+        DateTime endDate = new DateTime(2011, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         List<DateTime> fridays = new ArrayList<>();
         boolean reachedAFriday = false;
@@ -125,7 +125,7 @@ public class GenerateTest {
             }
             
                 String dayOfMonth = ""+monthStr[startDate.getMonthOfYear()-1];
-                url += "{\"albumID\":\""+albumID+"\", \"albumName\":\"" +"Month-"+dayOfMonth +"\", \"songList\":["; //+"Month-"+startDate.dayOfMonth() +"\"},";
+                url += "{\"albumID\":\""+albumID+"\", \"albumName\":\"" +""+dayOfMonth +"\", \"songList\":["; //+"Month-"+startDate.dayOfMonth() +"\"},";
                 //System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
                 if(startRange == 0) startRange = songID;
                 while((monthStr[startDate.getMonthOfYear()-1]).equals(dayOfMonth))
@@ -171,7 +171,7 @@ public class GenerateTest {
                 }
         }
         
-        url = url.substring(0, url.length() - 1) +"]}]}";
+        url = url.substring(0, url.length() - 1) +"]}]}";//]}
         System.out.println(url);
         
         File file = new File("C:\\Users\\Fahad-PC\\Documents\\NetBeansProjects\\JavaApplication1\\filename.txt");
