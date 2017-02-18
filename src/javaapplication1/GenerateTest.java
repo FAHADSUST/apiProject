@@ -50,37 +50,6 @@ public class GenerateTest {
     //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
     public static void main(String[] args) throws IOException
     {
-        String start = "12/08/2010";
-        String end = "01/02/2011";
-        DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2010, 8, 13, 0, 0, 0, 0);//pattern.parseDateTime(start);
-        DateTime endDate = new DateTime(2011, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
-
-        List<DateTime> fridays = new ArrayList<>();
-        boolean reachedAFriday = false;
-        
-        /*String url = "{\"episodeList\":[";
-        
-        while (startDate.isBefore(endDate)){
-            if ( startDate.getDayOfWeek() == DateTimeConstants.FRIDAY ){
-                fridays.add(startDate);
-                reachedAFriday = true;
-                
-                String date = startDate.getYear()+"-" + startDate.getMonthOfYear()+ "-" + startDate.getDayOfMonth();
-                String urlTemp = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                
-                url += "{\"fileName\":\""+"Episode-"+date+"\", \"url\":\""+urlTemp +"\"},";
-                
-            }
-            if ( reachedAFriday ){
-                startDate = startDate.plusWeeks(1);
-            } else {
-                startDate = startDate.plusDays(1);
-                
-                
-            }
-            
-        }*/
         String[] monthStr = {"January",      
             "February",
             "March",        
@@ -105,10 +74,21 @@ public class GenerateTest {
                 
         };
         
+        List<DateTime> fridays = new ArrayList<>();
+        boolean reachedAFriday = false;
+        
+        String start = "12/08/2010";
+        String end = "01/02/2011";
+        DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
+        DateTime startDate = new DateTime(2013, 9, 1, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime endDate = new DateTime(2014, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
+
+        
+
         int startRange = 0;
-        int yearID = 0;
-        int albumID = 0;
-        int songID = 0;
+        int yearID = 3;
+        int albumID = 38;
+        int songID = 159;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -150,7 +130,8 @@ public class GenerateTest {
                     }
                     if ( reachedAFriday ){
                         startDate = startDate.plusWeeks(1);
-                    } else {
+                    } else 
+                    {
                         startDate = startDate.plusDays(1);
                     }
                   
