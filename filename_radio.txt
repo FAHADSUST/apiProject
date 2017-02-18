@@ -1,1 +1,1 @@
-[{"name": "Radio Foorti","url_path": {"frequency": "FM 88.0","image": "http://cdn-radiotime-logos.tunein.com/s122537q.png","stream-link": "http://119.148.23.88:1021/;stream/1"}}]
+[{"name": "Radio Foorti", "frequency": "FM 88.0", "image": "http://cdn-radiotime-logos.tunein.com/s122537q.png","stream-link": "http://119.148.23.88:1021/;stream/1"}]
