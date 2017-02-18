@@ -80,15 +80,15 @@ public class GenerateTest {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2013, 9, 1, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
-        DateTime endDate = new DateTime(2014, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
+        DateTime startDate = new DateTime(2017, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime endDate = new DateTime(2017, 3, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
 
         int startRange = 0;
-        int yearID = 3;
-        int albumID = 38;
-        int songID = 159;
+        int yearID = 6;
+        int albumID = 78;
+        int songID = 333;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -155,7 +155,7 @@ public class GenerateTest {
         url = url.substring(0, url.length() - 1) +"]}]}";//]}
         System.out.println(url);
         
-        File file = new File("C:\\Users\\Fahad-PC\\Documents\\NetBeansProjects\\JavaApplication1\\filename.txt");
+        File file = new File("filename.txt");
 
         // if file doesnt exists, then create it
         if (!file.exists()) {
