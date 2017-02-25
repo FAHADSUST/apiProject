@@ -27,7 +27,7 @@ import org.joda.time.format.DateTimeFormatter;
  *
  * @author Fahad-PC
  */
-public class GenerateTest2DK {
+public class GenerateTest2Dor {
 //
 //    {"employees":[
 //    {"firstName":"John", "lastName":"Doe"},
@@ -144,13 +144,14 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
+        int episodeNumber = 139;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
         Random r = new Random();
         int i1 = (r.nextInt(80) + 65);
         while (startDate.isAfter(endDate)){
-            if(songID >= 199) break;
+            if(songID >= episodeNumber) break;
             String dayOfYaer = ""+startDate.getYear();
             
             if(!prevYear.equals(dayOfYaer))
@@ -166,7 +167,7 @@ public class GenerateTest2DK {
                 if(startRange == 0) startRange = songID;
                 while((monthStr[startDate.getMonthOfYear()-1]).equals(dayOfMonth))
                 {
-                    if ( startDate.getDayOfWeek() == DateTimeConstants.MONDAY ){
+                    if ( startDate.getDayOfWeek() == DateTimeConstants.THURSDAY ){
                         fridays.add(startDate);
                         reachedAFriday = true;
                         
@@ -177,8 +178,8 @@ public class GenerateTest2DK {
                         
                         
                         
-                        path = songPath.get(198-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                        artist = "Kuasha";
+                        path = songPath.get(episodeNumber-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
+                        artist = "Dor";
                         composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
@@ -213,7 +214,7 @@ public class GenerateTest2DK {
         url = url.substring(0, url.length() - 1) +"]}]}";//]}
         System.out.println(url);
         
-        File file = new File("filename_kuasha.txt");
+        File file = new File("filename_dor.txt");
 
         // if file doesnt exists, then create it
         if (!file.exists()) {
