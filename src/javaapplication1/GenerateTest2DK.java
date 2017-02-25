@@ -6,10 +6,14 @@
 package javaapplication1;
 
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -23,7 +27,7 @@ import org.joda.time.format.DateTimeFormatter;
  *
  * @author Fahad-PC
  */
-public class GenerateTest {
+public class GenerateTest2DK {
 //
 //    {"employees":[
 //    {"firstName":"John", "lastName":"Doe"},
@@ -45,11 +49,62 @@ public class GenerateTest {
     
         static int albumID;
         static String albumName;
+    private static Object fis;
         ArrayList<String> songList = new ArrayList<>();
+        static ArrayList<String> songPath = new ArrayList<>();
         
     //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
     public static void main(String[] args) throws IOException
     {
+        BufferedReader buffreader = null;
+        try {
+            // open the file for reading
+            InputStream fis = new FileInputStream("kuasha-episode.txt");
+            
+            
+
+            // if file the available for reading
+            if (fis != null) {
+
+              // prepare the file for reading
+              InputStreamReader chapterReader = new InputStreamReader(fis);
+              buffreader = new BufferedReader(chapterReader);
+              
+              String line = null;
+              while(true)
+              {     try{
+                    line = buffreader.readLine();
+                    
+                    }catch(Exception e)
+                    {
+
+                    }
+
+                    if(line == null) break;
+                    
+                    songPath.add(line);
+            
+              }
+
+              /*String line;
+
+              // read every line of the file into the line-variable, on line at the time
+              do {
+                 line = buffreader.readLine();
+                // do something with the line 
+                 System.out.println(line);
+              } while (line != null);
+                      */
+
+            }
+        } catch (Exception e) {
+            
+        } finally {
+            
+        }
+
+        
+        
         String[] monthStr = {"January",      
             "February",
             "March",        
@@ -64,13 +119,13 @@ public class GenerateTest {
             "December"};
         
         String[] urlImage = {
-            "http://4.bp.blogspot.com/-JDDjeX6ztiI/U6mn3-Of7wI/AAAAAAAAAMY/km3eACuT75E/s1600/10353101_10152170733466198_3664008163153667484_n.jpg",
-            "http://1.bp.blogspot.com/-mOoVlytvSO4/U5R6WUqPyyI/AAAAAAAAAME/w86DL6W-5U8/s1600/bhoor.png",
-            "http://4.bp.blogspot.com/-ApR82yhT6eo/U4oZs3VcMDI/AAAAAAAAAL0/l4eQemQ26rk/s1600/10402652_10152125506826198_7227367506852786682_n.png",
-            "http://1.bp.blogspot.com/-jzvDBPis4dY/U4C53NEbfEI/AAAAAAAAALg/cIxl6SsBmro/s1600/10294396_10152110699576198_368137538809996710_n.png",
-            "http://1.bp.blogspot.com/-nSyx3AJjll4/U90uefa7v1I/AAAAAAAAAR0/lFwzByGARbc/s1600/10570336_10152239132836198_457328953715149642_n.png",
-            "http://4.bp.blogspot.com/-dRn5FYub6aI/U-Xetj4LqII/AAAAAAAAAS8/-7CrGGGUxbU/s1600/10600476_10152259517716198_5193933554537289877_n.png",
-                "https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.tellychakkar.com%2Fsites%2Fwww.tellychakkar.com%2Ffiles%2Fstyles%2Fdisplay_665x429%2Fpublic%2Fimages%2Fstory%2F2013%2F11%2F02%2Fbhoot.jpg%3Fitok%3DQpOlzrls&imgrefurl=http%3A%2F%2Fwww.debate.org%2Fdebates%2FDo-Jinn-Churail-and-Bhoot-exist%2F1%2F&docid=1ZCBOvVU6HhIhM&tbnid=vsOv6cHwoyhy8M%3A&vet=1&w=650&h=429&bih=950&biw=1920&q=bhoot%20image&ved=0ahUKEwjz1N60poDSAhVGuY8KHSAyBqgQMwgtKAEwAQ&iact=mrc&uact=8#h=429&imgdii=wv3huFtM7muXYM:&imgrc=vsOv6cHwoyhy8M:&vet=1&w=650"
+            "http://4.bp.blogspot.com.jpg",
+            "http://1.bp.blogspot.com/",
+            "http://4.bp.blogspot.com/-ApR8.png",
+            "http://1.bp.blogspot.com/-jzvD.png",
+            "http://1.bp.blogspot.com/-nS.png",
+            "http://4.bp.blogspot.com/-dRn5F.png",
+                "https://www.google.com/imgres?650"
                 
         };
         
@@ -80,21 +135,22 @@ public class GenerateTest {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2013, 9, 1, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
-        DateTime endDate = new DateTime(2014, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
+        DateTime startDate = new DateTime(2017, 2, 25, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
 
         int startRange = 0;
-        int yearID = 3;
-        int albumID = 38;
-        int songID = 159;
+        int yearID = 0;
+        int albumID = 0;
+        int songID = 0;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
         Random r = new Random();
         int i1 = (r.nextInt(80) + 65);
-        while (startDate.isBefore(endDate)){
+        while (startDate.isAfter(endDate)){
+            if(songID >= 199) break;
             String dayOfYaer = ""+startDate.getYear();
             
             if(!prevYear.equals(dayOfYaer))
@@ -110,7 +166,7 @@ public class GenerateTest {
                 if(startRange == 0) startRange = songID;
                 while((monthStr[startDate.getMonthOfYear()-1]).equals(dayOfMonth))
                 {
-                    if ( startDate.getDayOfWeek() == DateTimeConstants.FRIDAY ){
+                    if ( startDate.getDayOfWeek() == DateTimeConstants.MONDAY ){
                         fridays.add(startDate);
                         reachedAFriday = true;
                         
@@ -118,10 +174,12 @@ public class GenerateTest {
                         String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
                         
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
-                        //http://dl.bhoot-fm.com/Bhoot-FM_2017-01-13_(Bhoot-FM.com).mp3
-                        path = "http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                        artist = "Bhoot-Fm";
-                        composer = "Radio-Foorti";
+                        
+                        
+                        
+                        path = songPath.get(198-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
+                        artist = "Kuasha";
+                        composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
                         url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+date +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
@@ -129,10 +187,10 @@ public class GenerateTest {
                         songID++;
                     }
                     if ( reachedAFriday ){
-                        startDate = startDate.plusWeeks(1);
+                        startDate = startDate.minusWeeks(1);
                     } else 
                     {
-                        startDate = startDate.plusDays(1);
+                        startDate = startDate.minusDays(1);
                     }
                   
                     System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
@@ -155,7 +213,7 @@ public class GenerateTest {
         url = url.substring(0, url.length() - 1) +"]}]}";//]}
         System.out.println(url);
         
-        File file = new File("C:\\Users\\Fahad-PC\\Documents\\NetBeansProjects\\JavaApplication1\\filename.txt");
+        File file = new File("filename_kuasha.txt");
 
         // if file doesnt exists, then create it
         if (!file.exists()) {
