@@ -187,7 +187,7 @@ public class GenerateTest2Dor {
                         String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
                         
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
-                        String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + " " + startDate.getYear();
+                        String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
                         
                         
                         path = songPath.get(episodeNumber-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";

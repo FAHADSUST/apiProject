@@ -103,7 +103,18 @@ public class GenerateTest2DK {
             
         }
 
-        
+        String[] monthStr2 = {"Jan",      
+            "Feb",
+            "Mar",        
+            "Apr",        
+            "May",          
+            "Jun",         
+            "Jul",         
+            "Aug",       
+            "Sep",    
+            "Oct",      
+            "Nove",     
+            "Dec"};
         
         String[] monthStr = {"January",      
             "February",
@@ -119,13 +130,13 @@ public class GenerateTest2DK {
             "December"};
         
         String[] urlImage = {
-            "http://4.bp.blogspot.com.jpg",
-            "http://1.bp.blogspot.com/",
-            "http://4.bp.blogspot.com/-ApR8.png",
-            "http://1.bp.blogspot.com/-jzvD.png",
-            "http://1.bp.blogspot.com/-nS.png",
-            "http://4.bp.blogspot.com/-dRn5F.png",
-                "https://www.google.com/imgres?650"
+            "http://i.imgur.com/Pks8tmU.jpg",
+            "http://i.imgur.com/UHv8tdw.jpg",
+            "http://i.imgur.com/AybMRiN.jpg",
+            "http://i.imgur.com/J7gMxN4.jpg",
+            "http://i.imgur.com/8C3N9lN.jpg",
+            "http://i.imgur.com/p5RjLUq.jpg",
+                "http://i.imgur.com/vp97ZQe.jpg"
                 
         };
         
@@ -135,7 +146,7 @@ public class GenerateTest2DK {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 2, 25, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 3, 11, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -144,13 +155,14 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
+        int episodeNumber = 139;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
         Random r = new Random();
         int i1 = (r.nextInt(80) + 65);
         while (startDate.isAfter(endDate)){
-            if(songID >= 199) break;
+            if(songID >= episodeNumber) break;
             String dayOfYaer = ""+startDate.getYear();
             
             if(!prevYear.equals(dayOfYaer))
@@ -166,6 +178,7 @@ public class GenerateTest2DK {
                 if(startRange == 0) startRange = songID;
                 while((monthStr[startDate.getMonthOfYear()-1]).equals(dayOfMonth))
                 {
+                    if(songID >= episodeNumber) break;
                     if ( startDate.getDayOfWeek() == DateTimeConstants.MONDAY ){
                         fridays.add(startDate);
                         reachedAFriday = true;
@@ -174,15 +187,15 @@ public class GenerateTest2DK {
                         String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
                         
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
+                        String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
                         
                         
-                        
-                        path = songPath.get(198-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
+                        path = songPath.get(episodeNumber-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "Kuasha";
                         composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
-                        url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+date +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
+                        url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
                         songID++;
                     }
