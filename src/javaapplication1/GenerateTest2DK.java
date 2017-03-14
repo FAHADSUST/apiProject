@@ -155,7 +155,7 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 200;
+        int episodeNumber = 201;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -190,7 +190,7 @@ public class GenerateTest2DK {
                         String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
                         
                         
-                        path = songPath.get(episodeNumber-songID);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
+                        path = songPath.get(episodeNumber-songID-1);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "Kuasha";
                         composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
