@@ -146,7 +146,7 @@ public class GenerateTest2DK {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 3, 11, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 3, 14, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -155,7 +155,7 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 139;
+        int episodeNumber = 200;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -197,6 +197,8 @@ public class GenerateTest2DK {
 
                         url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
+                        
+                        System.out.println("songid: "+ songID);
                         songID++;
                     }
                     if ( reachedAFriday ){
@@ -206,7 +208,7 @@ public class GenerateTest2DK {
                         startDate = startDate.minusDays(1);
                     }
                   
-                    System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
+                    //System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
                 }
                 
                 
