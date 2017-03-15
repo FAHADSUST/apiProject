@@ -1,1 +1,1 @@
-[{"name": "ABC Radio", "frequency": "FM 89.2", "image": "http://imgur.com/IxE9Z9f.jpg","stream_link": "http://st2.zenorad.io:14424/;stream/1"}]
+[{"name": "ABC Radio", "frequency": "FM 89.2", "image": "http://imgur.com/IxE9Z9f.jpg","stream_link": "http://st2.zenorad.io:14424/;stream.mp3"}]
