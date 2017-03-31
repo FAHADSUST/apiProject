@@ -27,7 +27,7 @@ import org.joda.time.format.DateTimeFormatter;
  *
  * @author Fahad-PC
  */
-public class GenerateTest2Dor {
+public class GenerateTest2Suspense {
 //
 //    {"employees":[
 //    {"firstName":"John", "lastName":"Doe"},
@@ -58,11 +58,19 @@ public class GenerateTest2Dor {
     {
         BufferedReader buffreader = null;
         try {
-            // open the file for reading
-            InputStream fis = new FileInputStream("Dor.txt");
             
-            
+            //File file = new File("filename_sunday_sus.txt");
+            File file = new File("filename_sunday_sus_name.txt");
 
+            if (!file.exists()) {
+                    file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+            
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");     
+            InputStream fis = new FileInputStream("filename_sunday_sus.txt");  
             // if file the available for reading
             if (fis != null) {
 
@@ -74,6 +82,14 @@ public class GenerateTest2Dor {
               while(true)
               {     try{
                     line = buffreader.readLine();
+                    String segment = line.substring(46);//33
+                    String fin = segment.substring(0,segment.length()-4);
+                    fin = fin.replace("_", " ");
+                    fin = fin.replace("-", " ");
+                    fin = fin.replace("%28", "");
+                    fin = fin.replace("%27", "");
+                    fin = fin.replace("%29", "");
+                    bw.write( fin+"\n");
                     
                     }catch(Exception e)
                     {
@@ -85,6 +101,9 @@ public class GenerateTest2Dor {
                     songPath.add(line);
             
               }
+              
+              bw.close();
+              
 
               /*String line;
 
@@ -101,6 +120,11 @@ public class GenerateTest2Dor {
             
         } finally {
             
+        }
+        boolean abc = true;
+        if(abc)
+        {
+            return ;
         }
 
         String[] monthStr2 = {"Jan",      
@@ -146,7 +170,7 @@ public class GenerateTest2Dor {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 3, 31, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 3, 18, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -155,7 +179,7 @@ public class GenerateTest2Dor {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 136;
+        int episodeNumber = 134;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
