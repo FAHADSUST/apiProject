@@ -146,7 +146,7 @@ public class GenerateTest2Dor {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 5, 5, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 5, 19, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -155,7 +155,7 @@ public class GenerateTest2Dor {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 141;
+        int episodeNumber = 143;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -187,15 +187,15 @@ public class GenerateTest2Dor {
                         String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
                         
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
-                        String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
-                        
+                        String EpisodesName = "Ep-" + dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
+                        if(songID == 0) EpisodesName = "(New)"+EpisodesName;
                         
                         path = songPath.get(episodeNumber-songID-1);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "Dor";
                         composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
 
-                        url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
+                        url += "{\"songID\":\""+songID+"\", \"title\":\""+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
                         songID++;
                     }
