@@ -17,6 +17,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import static javaapplication1.GenerateTest2DK.artist;
+import static javaapplication1.GenerateTest2DK.imageUrl;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;
 import org.joda.time.format.DateTimeFormat;
@@ -50,12 +52,8 @@ public class GenerateTest2Suspense {
         static int albumID;
         static String albumName;
     private static Object fis;
-        ArrayList<String> songList = new ArrayList<>();
-        static ArrayList<String> songPath = new ArrayList<>();
-        
-    //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
-    public static void main(String[] args) throws IOException
-    {
+
+    private static void readFile() {
         BufferedReader buffreader = null;
         try {
             
@@ -126,32 +124,16 @@ public class GenerateTest2Suspense {
         {
             return ;
         }
-
-        String[] monthStr2 = {"Jan",      
-            "Feb",
-            "Mar",        
-            "Apr",        
-            "May",          
-            "Jun",         
-            "Jul",         
-            "Aug",       
-            "Sep",    
-            "Oct",      
-            "Nove",     
-            "Dec"};
+    }
+        ArrayList<String> songList = new ArrayList<>();
+        static ArrayList<String> songPath = new ArrayList<>();
         
-        String[] monthStr = {"January",      
-            "February",
-            "March",        
-            "April",        
-            "May",          
-            "June",         
-            "July",         
-            "August",       
-            "September",    
-            "October",      
-            "November",     
-            "December"};
+    //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
+    public static void main(String[] args) throws IOException
+    {
+        
+        //readFile();
+        
         
         String[] urlImage = {
             "http://i.imgur.com/DMmPf5f.jpg",
@@ -164,105 +146,77 @@ public class GenerateTest2Suspense {
                 
         };
         
-        List<DateTime> fridays = new ArrayList<>();
-        boolean reachedAFriday = false;
-        
-        String start = "12/08/2010";
-        String end = "01/02/2011";
-        DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 3, 18, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
-        DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
-
-        
-
-        int startRange = 0;
-        int yearID = 0;
-        int albumID = 0;
-        int songID = 0;
-        int episodeNumber = 134;
-        String url = "{\"albumList\":[";
-        String prevYear = "";
-        
-        Random r = new Random();
-        int i1 = (r.nextInt(80) + 65);
-        while (startDate.isAfter(endDate)){
-            if(songID >= episodeNumber) break;
-            String dayOfYaer = ""+startDate.getYear();
+        BufferedReader buffreader;
+        BufferedReader buffreader2;
+        try {
             
-            if(!prevYear.equals(dayOfYaer))
-            {
-                url += "{\"yearID\":\""+yearID+"\", \"yearName\":\"" +"YEAR-"+dayOfYaer +"\", \"monthList\":[";
-                prevYear = ""+startDate.getYear();
-                yearID++;
+            //File file = new File("filename_sunday_sus.txt");
+            
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");     
+            InputStream fis = new FileInputStream("filename_sunday_sus.txt");  
+            InputStream fis2 = new FileInputStream("filename_sunday_sus_name.txt");  
+            // if file the available for reading
+            if (fis != null) {
+
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
+
+                InputStreamReader chapterReader2 = new InputStreamReader(fis2);
+                buffreader2 = new BufferedReader(chapterReader2);
+
+                String songPath = null;
+                String songName = null;
+
+                String url = "{\"songList\":[";
+
+                songID = 0;
+
+                artist = "Sunday Suspense";
+                composer = "Radio Misri";
+
+                Random r = new Random();
+
+                while(true)
+                {     
+
+                      songPath = buffreader.readLine();
+                      songName = buffreader2.readLine();
+
+                      if(songPath == null) break;
+
+                      imageUrl = urlImage[r.nextInt(7)];
+
+                      url += "{\"songID\":\""+songID+"\", \"title\":\""+(songID+1)+"-"+songName +"\", \"artist\":\""+artist+ "\", \"path\":\""+songPath+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
+
+                      songID++;
+
+                }
+                url = url.substring(0, url.length()-1) + "]}";
+              
+                System.out.println(""+url);
+              
+                File file = new File("filename_sunday_sus_main.txt");
+
+                 // if file doesnt exists, then create it
+                 if (!file.exists()) {
+                         file.createNewFile();
+                 }
+
+                 FileWriter fw = new FileWriter(file.getAbsoluteFile());
+                 BufferedWriter bw = new BufferedWriter(fw);
+                 bw.write(url);
+                 bw.close();
+
+                 System.out.println("Done");
+
+
             }
+        } catch (Exception e) {
             
-                String dayOfMonth = ""+monthStr[startDate.getMonthOfYear()-1];
-                url += "{\"albumID\":\""+albumID+"\", \"albumName\":\"" +""+dayOfMonth +"\", \"songList\":["; //+"Month-"+startDate.dayOfMonth() +"\"},";
-                //System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
-                if(startRange == 0) startRange = songID;
-                while((monthStr[startDate.getMonthOfYear()-1]).equals(dayOfMonth))
-                {
-                    if(songID >= episodeNumber) break;
-                    if ( startDate.getDayOfWeek() == DateTimeConstants.THURSDAY ){
-                        fridays.add(startDate);
-                        reachedAFriday = true;
-                        
-                        String MothWithTwoDigit = String.format("%02d", startDate.getMonthOfYear());
-                        String dateWithTwoDigit = String.format("%02d", startDate.getDayOfMonth());
-                        
-                        String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
-                        String EpisodesName = dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
-                        
-                        
-                        path = songPath.get(episodeNumber-songID-1);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
-                        artist = "Dor";
-                        composer = "ABC-Radio";
-                        imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
-
-                        url += "{\"songID\":\""+songID+"\", \"title\":\"Episode-"+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
-                        
-                        songID++;
-                    }
-                    if ( reachedAFriday ){
-                        startDate = startDate.minusWeeks(1);
-                    } else 
-                    {
-                        startDate = startDate.minusDays(1);
-                    }
-                  
-                    System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
-                }
-                
-                
-                
-                albumID++;
-                url = url.substring(0, url.length() - 1) +"], \"songListRange\":\""+startRange +"-"+ (songID-1) +"\"},";
-                
-                startRange = 0;
-                
-                if(!prevYear.equals(""+startDate.getYear()))
-                {
-                    url = url.substring(0, url.length() - 1) +"]},";
-                    //prevYear = dayOfYaer;
-                }
+        } finally {
+            
         }
-        
-        url = url.substring(0, url.length() - 1) +"]}]}";//]}
-        System.out.println(url);
-        
-        File file = new File("filename_dor.txt");
-
-        // if file doesnt exists, then create it
-        if (!file.exists()) {
-                file.createNewFile();
-        }
-
-        FileWriter fw = new FileWriter(file.getAbsoluteFile());
-        BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(url);
-        bw.close();
-
-        System.out.println("Done");
 
     }
 
