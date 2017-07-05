@@ -79,7 +79,7 @@ public class GenerateTest2Suspense {
                         
 
                         songPathList.add(line);
-                        songNameList.add(fin);
+                        songNameList.add(fin.replace("(Bengali Mp3.com)", ""));
                         
 
                     } catch (Exception e) {
