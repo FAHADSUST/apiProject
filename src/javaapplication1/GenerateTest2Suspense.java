@@ -18,6 +18,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -204,7 +206,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("100", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("101", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -237,6 +239,81 @@ public class GenerateTest2Suspense {
 
     }
 
+    private static void findTheOriginalUrl() {
+        try{
+        File file = new File("radio_sunday_sus/filename_sunday_sus_orig_url.txt");
+
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");     
+            InputStream fis = new FileInputStream("sunday_outputfileName64.txt");
+            // if file the available for reading
+            if (fis != null) {
+
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                BufferedReader buffreader = new BufferedReader(chapterReader);
+
+                String line = null;
+                while (true) {
+                    try {
+                        line = buffreader.readLine();
+                    } catch (Exception e) {
+
+                    }
+
+                    if (line == null) {
+                        break;
+                    }
+                    
+                    
+                    System.out.println("fake: " + line);
+                    String url = getFinalURL(line);
+                    System.out.println("url " + url);
+                    bw.write(url + "\n");
+
+                }
+
+                bw.close();
+
+
+                /*String line;
+
+                 // read every line of the file into the line-variable, on line at the time
+                 do {
+                 line = buffreader.readLine();
+                 // do something with the line 
+                 System.out.println(line);
+                 } while (line != null);
+                 */
+            }
+        } catch (Exception e) {
+               System.out.println("" + e.toString());
+        } finally {
+
+        }
+    }
+    
+    public static String getFinalURL(String url) throws IOException {
+    HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
+    con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
+
+    con.setInstanceFollowRedirects(false);
+    con.connect();
+    con.getInputStream();
+
+    if (con.getResponseCode() == HttpURLConnection.HTTP_MOVED_PERM || con.getResponseCode() == HttpURLConnection.HTTP_MOVED_TEMP) {
+        String redirectUrl = con.getHeaderField("Location");
+        return getFinalURL(redirectUrl);
+    }
+    return url;
+}
+
     ArrayList<String> songList = new ArrayList<>();
     static ArrayList<String> songPath = new ArrayList<>();
 
@@ -245,6 +322,7 @@ public class GenerateTest2Suspense {
 
         //readFile();
         encryptAndWriteToFile();
+        //findTheOriginalUrl();
         
         if(true) return;
 
