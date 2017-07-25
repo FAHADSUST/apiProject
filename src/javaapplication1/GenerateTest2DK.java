@@ -146,7 +146,7 @@ public class GenerateTest2DK {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 7, 21, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 7, 25, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -155,7 +155,7 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 219;
+        int episodeNumber = 220;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
