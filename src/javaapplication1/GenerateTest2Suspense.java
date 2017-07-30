@@ -206,7 +206,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("105", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("107", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -343,8 +343,8 @@ public class GenerateTest2Suspense {
 
             //File file = new File("filename_sunday_sus.txt");
             //InputStream fis = new FileInputStream("sunday_suspense.txt");     
-            InputStream fis = new FileInputStream("filename_sunday_sus.txt");
-            InputStream fis2 = new FileInputStream("filename_sunday_sus_name.txt");
+            InputStream fis = new FileInputStream("sunday_outputfileName_orig2.txt");
+            InputStream fis2 = new FileInputStream("sunday_outputfileName2.txt");
             // if file the available for reading
             if (fis != null) {
 
@@ -371,10 +371,15 @@ public class GenerateTest2Suspense {
 
                     songPath = buffreader.readLine();
                     songName = buffreader2.readLine();
-
+                    
                     if (songPath == null) {
                         break;
                     }
+                    
+                    songName = songName.replace("SS", "");
+                    songName = songName.replace("64ks", "");
+                    songName = songName.replace(".mp3", "");
+
 
                     imageUrl = urlImage[r.nextInt(7)];
 
@@ -403,7 +408,7 @@ public class GenerateTest2Suspense {
 
             }
         } catch (Exception e) {
-
+                System.out.println("exception " +e.toString());
         } finally {
 
         }
