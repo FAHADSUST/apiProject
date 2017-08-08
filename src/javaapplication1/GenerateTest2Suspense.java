@@ -343,8 +343,8 @@ public class GenerateTest2Suspense {
 
             //File file = new File("filename_sunday_sus.txt");
             //InputStream fis = new FileInputStream("sunday_suspense.txt");     
-            InputStream fis = new FileInputStream("sunday_outputfileName_orig2.txt");
-            InputStream fis2 = new FileInputStream("sunday_outputfileName2.txt");
+            InputStream fis = new FileInputStream("filename_sunday_url.txt");
+            InputStream fis2 = new FileInputStream("filename_sunday_name.txt");
             // if file the available for reading
             if (fis != null) {
 
