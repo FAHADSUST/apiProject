@@ -146,7 +146,7 @@ public class GenerateTest2DK {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 8, 3, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 8, 12, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -155,7 +155,7 @@ public class GenerateTest2DK {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 221;
+        int episodeNumber = 222;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -188,18 +188,15 @@ public class GenerateTest2DK {
                         
                         String date = startDate.getYear()+"-" + MothWithTwoDigit+ "-" + dateWithTwoDigit;
                         String EpisodesName = "Ep-" + dateWithTwoDigit + " " + monthStr2[startDate.getMonthOfYear()-1] + "," + startDate.getYear();
-                        
+                        if(songID == 0) EpisodesName = "(New)"+EpisodesName;
                         
                         path = songPath.get(episodeNumber-songID-1);//"http://dl.bhoot-fm.com/Bhoot-FM_"+date+"_(Bhoot-FM.com).mp3";
                         artist = "Kuasha";
                         composer = "ABC-Radio";
                         imageUrl = urlImage[r.nextInt(7)];//"http://3.bp.blogspot.com/-nd09lbpK1Mk/U7hkntBHF4I/AAAAAAAAAM8/FFsAfjT9tW8/s1600/bhoot.jpg";
-                        
-                        if(songID == 0) EpisodesName = "(New)"+ EpisodesName;
+
                         url += "{\"songID\":\""+songID+"\", \"title\":\""+EpisodesName +"\", \"artist\":\""+artist+ "\", \"path\":\""+path+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
                         
-                        
-                        System.out.println("songid: "+ songID);
                         songID++;
                     }
                     if ( reachedAFriday ){
@@ -209,7 +206,7 @@ public class GenerateTest2DK {
                         startDate = startDate.minusDays(1);
                     }
                   
-                    //System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
+                    System.out.println("fahad -- "+ (startDate.getDayOfMonth()-1));
                 }
                 
                 
