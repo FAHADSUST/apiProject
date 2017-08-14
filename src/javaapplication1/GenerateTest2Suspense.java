@@ -150,24 +150,22 @@ public class GenerateTest2Suspense {
 
         String[] urlAppName = {
             "Jiboner Golpo Collection",
-            "Sunday Suspense Collection",
+            "Bhoot FM Collection",
             "Rohosyo Romancho Ghost Story",
             "Aloukik Robbar",
             "Kuasha Collection",
             "Dor Collection",
-            "Bhoot FM Collection"
-
+            "Sunday Suspense Collection"
         };
 
         String[] urlAppPackageName = {
             "com.studio71.jiboner_golpo_collection",
-            "com.studio71.sunday_suspense",
+            "com.crossappers.bhootfm_collection",
             "com.studio71.rohosyo_romancho_ghost",
             "com.studio71.aloukik_robbar",
             "com.studio71.kuasha_collection",
             "com.studio71.dor_collection",
-            "com.crossappers.bhootfm_collection"
-
+            "com.studio71.sunday_suspense"
         };
 
         ArrayList<AppData> appList = new ArrayList<>();
@@ -206,7 +204,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("109", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("110", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
