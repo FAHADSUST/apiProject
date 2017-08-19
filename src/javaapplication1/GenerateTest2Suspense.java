@@ -204,7 +204,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("111", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("112", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -341,8 +341,8 @@ public class GenerateTest2Suspense {
 
             //File file = new File("filename_sunday_sus.txt");
             //InputStream fis = new FileInputStream("sunday_suspense.txt");     
-            InputStream fis = new FileInputStream("filename_sunday_url.txt");
-            InputStream fis2 = new FileInputStream("filename_sunday_name.txt");
+            InputStream fis = new FileInputStream("sunday_outputfileName_url_bangla.txt");
+            InputStream fis2 = new FileInputStream("sunday_outputfileName_name_bangla.txt");
             // if file the available for reading
             if (fis != null) {
 
