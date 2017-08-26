@@ -59,7 +59,7 @@ public class GenerateTest2JibonerGolpo {
         BufferedReader buffreader = null;
         try {
             // open the file for reading
-            InputStream fis = new FileInputStream("jiboner_golpo/Jiboner_Golpo.txt");
+            InputStream fis = new FileInputStream("api_jibon/Jiboner_Golpo.txt");
             
             
 
@@ -145,7 +145,7 @@ public class GenerateTest2JibonerGolpo {
         String start = "12/08/2010";
         String end = "01/02/2011";
         DateTimeFormatter pattern = DateTimeFormat.forPattern("dd/mm/yyyy");
-        DateTime startDate = new DateTime(2017, 8, 17, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
+        DateTime startDate = new DateTime(2017, 8, 26, 0, 0, 0, 0);//pattern.parseDateTime(start); // year-month-day
         DateTime endDate = new DateTime(2010, 1, 1, 0, 0, 0, 0);//pattern.parseDateTime(end);
 
         
@@ -154,7 +154,7 @@ public class GenerateTest2JibonerGolpo {
         int yearID = 0;
         int albumID = 0;
         int songID = 0;
-        int episodeNumber = 270;
+        int episodeNumber = 273;
         String url = "{\"albumList\":[";
         String prevYear = "";
         
@@ -239,7 +239,7 @@ public class GenerateTest2JibonerGolpo {
         url = url.substring(0, url.length() - 1) +"]}]}";//]}
         System.out.println(url);
         
-        File file = new File("jiboner_golpo/filename_jiboner_golpo.txt");
+        File file = new File("api_jibon/filename_jiboner_golpo.txt");
 
         // if file doesnt exists, then create it
         if (!file.exists()) {
