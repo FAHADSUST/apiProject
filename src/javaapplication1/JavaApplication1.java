@@ -94,7 +94,39 @@ public class JavaApplication1 {
     
     public static void main(String[] args) {
         // TODO code application logic here     
-        JavaApplication1 jv = new JavaApplication1();          
+        //JavaApplication1 jv = new JavaApplication1();
+
+        String nhMessage = "\"PushInformationID\":107,\"UserID\":3168,\"PakID\":7842,\"SessionDefID\":13254,\"PromptID\":21322,\"Response\":\"3\",\"ResponseTime\":1509562392,\"ResponseTimeOffset\":21600*#Silent:1";
+        String[] splitByHash = nhMessage.replace("\"", "").split("[*#]");
+
+
+        if(splitByHash.length > 1)
+        {
+            String silent = splitByHash[2];
+            String[] splitByColon = silent.split("[:]");
+            if(splitByColon.length > 1)
+            {
+                int isSilent = Integer.parseInt(splitByColon[1]);
+
+                if(isSilent == 1)
+                {
+                    HashMap<String, Object> userInfo = new HashMap<>();
+
+                    String userInfoStr = splitByHash[0];
+                    String[] splitByCommaUserInfo = userInfoStr.split(",");
+                    if(splitByCommaUserInfo.length>1)
+                    {
+
+                        for(int i = 0; i< splitByCommaUserInfo.length; i++) {
+                            String[] splitByColonUserInfo = splitByCommaUserInfo[i].split("[:]");
+                            userInfo.put(splitByColonUserInfo[0], splitByColonUserInfo[1]);
+                            System.out.println("fahad -> " + splitByColonUserInfo[0]+" - "+ splitByColonUserInfo[1]);
+                        }
+                    }
+
+                }
+            }
+        }
     }
     
     public ArrayList<String> result(String str)
