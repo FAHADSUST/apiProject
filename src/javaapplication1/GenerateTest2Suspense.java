@@ -10,6 +10,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,6 +27,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 import static javaapplication1.GenerateTest2DK.artist;
 import static javaapplication1.GenerateTest2DK.imageUrl;
@@ -204,7 +206,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("129", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("130", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -412,7 +414,7 @@ public class GenerateTest2Suspense {
         }
 
     }
-
+    
     public static byte[] compress(String data) throws IOException {
         ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length());
         GZIPOutputStream gzip = new GZIPOutputStream(bos);
