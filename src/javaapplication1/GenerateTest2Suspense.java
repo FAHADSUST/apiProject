@@ -206,7 +206,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("137", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("138", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -321,10 +321,10 @@ public class GenerateTest2Suspense {
     public static void main(String[] args) throws IOException {
 
         //readFile();
-        encryptAndWriteToFile();
+        //encryptAndWriteToFile();
         //findTheOriginalUrl();
         
-        if(true) return;
+        //if(true) return;
 
         String[] urlImage = {
             "http://i.imgur.com/DMmPf5f.jpg",
@@ -412,6 +412,8 @@ public class GenerateTest2Suspense {
         } finally {
 
         }
+
+        encryptAndWriteToFile();
 
     }
     
