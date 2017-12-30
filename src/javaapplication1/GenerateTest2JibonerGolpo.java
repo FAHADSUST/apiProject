@@ -129,13 +129,13 @@ public class GenerateTest2JibonerGolpo {
             "December"};
         
         String[] urlImage = {
-            "http://i.imgur.com/Pks8tmU.jpg",
-            "http://i.imgur.com/UHv8tdw.jpg",
-            "http://i.imgur.com/AybMRiN.jpg",
-            "http://i.imgur.com/J7gMxN4.jpg",
-            "http://i.imgur.com/8C3N9lN.jpg",
-            "http://i.imgur.com/p5RjLUq.jpg",
-                "http://i.imgur.com/vp97ZQe.jpg"
+            "https://i.imgur.com/VAwVL2V.jpg",
+            "https://i.imgur.com/bvWyY1t.jpg",
+            "https://i.imgur.com/VAwVL2V.jpg",
+            "https://i.imgur.com/bvWyY1t.jpg",
+            "https://i.imgur.com/VAwVL2V.jpg",
+            "https://i.imgur.com/bvWyY1t.jpg",
+                "https://i.imgur.com/VAwVL2V.jpg"
                 
         };
         
