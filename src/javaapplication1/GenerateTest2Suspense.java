@@ -8,19 +8,10 @@ package javaapplication1;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+
+import java.io.*;
+import java.net.*;
+
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -31,6 +22,8 @@ import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 import static javaapplication1.GenerateTest2DK.artist;
 import static javaapplication1.GenerateTest2DK.imageUrl;
+
+import com.sun.deploy.net.URLEncoder;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;
 import org.joda.time.format.DateTimeFormat;
@@ -206,7 +199,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("152", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("154", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -323,7 +316,8 @@ public class GenerateTest2Suspense {
         //readFile();
         //encryptAndWriteToFile();
         //findTheOriginalUrl();
-        
+
+        //generateGCSFileUrl();
         //if(true) return;
 
         String[] urlImage = {
@@ -425,6 +419,39 @@ public class GenerateTest2Suspense {
         byte[] compressed = bos.toByteArray();
         bos.close();
         return compressed;
+    }
+
+    public static void generateGCSFileUrl()
+    {
+        File folder = new File("D:\\sunday");
+        File[] listOfFiles = folder.listFiles();
+
+        for (int i = 0; i < listOfFiles.length; i++) {
+            if (listOfFiles[i].isFile()) {
+
+
+                /*try {
+                    URL url= new URL("https://storage.googleapis.com/bangla_audio/sun_sus/" + listOfFiles[i].getName());
+                    URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
+
+                    String urlStr=uri.toASCIIString();
+                    System.out.println(urlStr);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }*/
+
+                String name = listOfFiles[i].getName().replaceAll(" - ", "-");
+                name = name.replaceAll(".mp3", "");
+                name = name.replaceAll(" 64ks", "");
+                name = name.replaceAll(" SS", "");
+
+                System.out.println(name);
+            } else if (listOfFiles[i].isDirectory()) {
+                System.out.println("Directory " + listOfFiles[i].getName());
+            }
+        }
     }
 
 }
