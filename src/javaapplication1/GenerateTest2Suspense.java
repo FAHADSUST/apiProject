@@ -199,7 +199,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("156", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("160", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
@@ -423,15 +423,54 @@ public class GenerateTest2Suspense {
 
     public static void generateGCSFileUrl()
     {
+
+        String lineArray[] = new String[75];
         File folder = new File("D:\\sunday");
         File[] listOfFiles = folder.listFiles();
+
+        try{
+        File file = new File("new 2.txt");
+
+
+        FileWriter fw = new FileWriter(file.getAbsoluteFile());
+        BufferedWriter bw = new BufferedWriter(fw);
+        BufferedReader buffreader;
+
+        //InputStream fis = new FileInputStream("sunday_suspense.txt");
+        InputStream fis = new FileInputStream("new  2.txt");
+        // if file the available for reading
+        if (fis != null) {
+
+            // prepare the file for reading
+            InputStreamReader chapterReader = new InputStreamReader(fis);
+            buffreader = new BufferedReader(chapterReader);
+
+            int i = 0;
+            String line;
+             do {
+             line = buffreader.readLine();
+             lineArray[i++] = line;
+             if(i==72) break;
+             } while (line != null);
+
+            bw.close();
+
+
+
+        }
+    } catch (Exception e) {
+
+    } finally {
+
+    }
 
         for (int i = 0; i < listOfFiles.length; i++) {
             if (listOfFiles[i].isFile()) {
 
-
-                /*try {
-                    URL url= new URL("https://storage.googleapis.com/bangla_audio/sun_sus/" + listOfFiles[i].getName());
+                String name = listOfFiles[i].getName().replaceAll(" ", "_");
+                lineArray[i] = lineArray[i].replace("folder", "file");
+                try {
+                    URL url= new URL(lineArray[i] +"/" + name);
                     URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
 
                     String urlStr=uri.toASCIIString();
@@ -440,14 +479,15 @@ public class GenerateTest2Suspense {
                     e.printStackTrace();
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
-                }*/
+                }
 
-                String name = listOfFiles[i].getName().replaceAll(" - ", "-");
-                name = name.replaceAll(".mp3", "");
-                name = name.replaceAll(" 64ks", "");
-                name = name.replaceAll(" SS", "");
+                //String name = listOfFiles[i].getName().replaceAll(" ", "_");
+                //name = name.replaceAll(".mp3", "");
+                //name = name.replaceAll(" 64ks", "");
+                //name = name.replaceAll(" SS", "");
 
-                System.out.println(name);
+
+                //System.out.println(name);
             } else if (listOfFiles[i].isDirectory()) {
                 System.out.println("Directory " + listOfFiles[i].getName());
             }
