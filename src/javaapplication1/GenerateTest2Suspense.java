@@ -12,10 +12,7 @@ import com.google.gson.JsonObject;
 import java.io.*;
 import java.net.*;
 
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
@@ -170,7 +167,7 @@ public class GenerateTest2Suspense {
 
         InputStream fis = null;
         try {
-            fis = new FileInputStream("filename_sunday_sus_main.txt");
+            fis = new FileInputStream("api-aloukik-robbar/filename_aloukik_robbar.json");
 
             if (fis != null) {
                 
@@ -199,10 +196,10 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("199", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("100", compressedFullData, appListCompressedFullDta);
 
                 
-                File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
+                File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
 
                 
                 
@@ -313,6 +310,8 @@ public class GenerateTest2Suspense {
     //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
     public static void main(String[] args) throws IOException {
 
+        //();
+        //if(true)return;
         //readFile();
         //encryptAndWriteToFile();
         //findTheOriginalUrl();
@@ -356,8 +355,8 @@ public class GenerateTest2Suspense {
 
                 songID = 0;
 
-                artist = "Sunday Suspense";
-                composer = "Radio Misri";
+                artist = "Aloukik Robbar";
+                composer = "Friends 91.9FM";
 
                 Random r = new Random();
 
@@ -377,7 +376,13 @@ public class GenerateTest2Suspense {
 
                     imageUrl = urlImage[r.nextInt(7)];
 
-                    url += "{\"songID\":\"" + songID + "\", \"title\":\"" + (songID + 1) + "-" + songName + "\", \"artist\":\"" + artist + "\", \"path\":\"" + songPath + "\", \"albumId\":\"" + albumID + "\", \"composer\":\"" + composer + "\", \"imageUrl\":\"" + imageUrl + "\"},";
+                    if(songID>=22)
+                    {
+                        artist = "SS";
+                        composer = "RM";
+                    }
+
+                    url += "{\"songID\":\"" + songID + "\", \"title\":\"" + (((songID<23)?songID + 1: songID-22 + "-SS" ) ) + "-" + songName + "\", \"artist\":\"" + artist + "\", \"path\":\"" + songPath + "\", \"albumId\":\"" + albumID + "\", \"composer\":\"" + composer + "\", \"imageUrl\":\"" + imageUrl + "\"},";
 
                     songID++;
 
@@ -386,7 +391,7 @@ public class GenerateTest2Suspense {
 
                 System.out.println("" + url);
 
-                File file = new File("filename_sunday_sus_main.txt");
+                File file = new File("api-aloukik-robbar/filename_aloukik_robbar.json");
 
                 // if file doesnt exists, then create it
                 if (!file.exists()) {
@@ -410,7 +415,72 @@ public class GenerateTest2Suspense {
         encryptAndWriteToFile();
 
     }
-    
+
+    class Song{
+        int songID;
+        String title;
+        String artist;
+        String path;
+        String albumId;
+        String composer;
+        String imageUrl;
+    }
+
+    private static void readFile2() {
+
+        BufferedReader buffreader;
+
+        try {
+
+            InputStream fis = new FileInputStream("new  2.txt");
+
+            if (fis != null) {
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
+                String songPath = "";
+
+
+                songID = 41;
+
+                while (true) {
+                    String line = buffreader.readLine();
+
+                    if ( line == null) {
+                        break;
+                    }
+                    songPath += line;
+                }
+
+                Gson gson  = new Gson();
+                List<Song> songList = Arrays.asList(gson.fromJson(songPath, Song[].class));
+
+                for(Song song: songList)
+                {
+                    song.songID = songID++;
+                }
+
+               File file = new File("aloukik_sunday.txt");
+
+                // if file doesnt exists, then create it
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+
+                FileWriter fw = new FileWriter(file.getAbsoluteFile());
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(gson.toJson(songList));
+                bw.close();
+
+                System.out.println("Done");
+
+            }
+        } catch (Exception e) {
+            System.out.println("exception " +e.toString());
+        } finally {
+
+        }
+    }
+
     public static byte[] compress(String data) throws IOException {
         ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length());
         GZIPOutputStream gzip = new GZIPOutputStream(bos);
