@@ -196,7 +196,7 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("100", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("102", compressedFullData, appListCompressedFullDta);
 
                 
                 File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
