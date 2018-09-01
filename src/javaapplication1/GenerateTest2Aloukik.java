@@ -130,34 +130,37 @@ public class GenerateTest2Aloukik {
     private static void encryptAndWriteToFile() {
 
         String[] urlImage = {
+                "http://i.imgur.com/i2Z2Kdx.png",
                 "http://i.imgur.com/38j0K51.png",
                 "http://i.imgur.com/NPUTTlR.png",
                 "http://i.imgur.com/dO9BzMU.png",
-                "http://i.imgur.com/i2Z2Kdx.png",
                 "http://i.imgur.com/Y42hBNW.jpg",
                 "http://i.imgur.com/l8aYI2s.png",
-                "http://i.imgur.com/GxiKKME.png"
-
+                "http://i.imgur.com/NPUTTlR.png"
         };
 
         String[] urlAppName = {
+                "Aloukik Robbar + Sunday Suspense Collection",
                 "Jiboner Golpo Collection",
                 "Bhoot FM Collection",
-                "Rohosyo Romancho Ghost Story",
-                "Aloukik Robbar",
+                "Sunday Suspense Collection\n" +
+                        "Note: On request of Radio Mirchi we\n" +
+                        "have to remove the app from play store.\n" +
+                        "But you guys can enjoy all episode\n" +
+                        "include new one in Aloukik Robbar App" ,
                 "Kuasha Collection",
                 "Dor Collection",
-                "Sunday Suspense Collection"
+                "Bhoot FM Collection"
         };
 
         String[] urlAppPackageName = {
-                "com.studio71.jiboner_golpo_collection",
-                "com.crossappers.bhootfm_collection",
-                "com.studio71.rohosyo_romancho_ghost",
                 "com.studio71.aloukik_robbar",
+                "com.studio71.jiboner_golpo_collection",
+                "com.studio71.aloukik_robbar",
+                "com.studio71.rohosyo_romancho_ghost",
                 "com.studio71.kuasha_collection",
                 "com.studio71.dor_collection",
-                "com.studio71.sunday_suspense"
+                "com.crossappers.bhootfm_collection"
         };
 
         ArrayList<AppData> appList = new ArrayList<>();
@@ -196,7 +199,7 @@ public class GenerateTest2Aloukik {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("102", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("104", compressedFullData, appListCompressedFullDta);
 
 
                 File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
