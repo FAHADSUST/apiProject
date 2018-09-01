@@ -167,7 +167,7 @@ public class GenerateTest2Suspense {
 
         InputStream fis = null;
         try {
-            fis = new FileInputStream("api-aloukik-robbar/filename_aloukik_robbar.json");
+            fis = new FileInputStream("filename_sunday_sus_main.json");
 
             if (fis != null) {
                 
@@ -196,10 +196,10 @@ public class GenerateTest2Suspense {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("102", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("900", compressedFullData, appListCompressedFullDta);
 
                 
-                File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
+                File file = new File("radio_sunday_sus/filename_sunday_sus_main_2.json");
 
                 
                 
@@ -355,8 +355,8 @@ public class GenerateTest2Suspense {
 
                 songID = 0;
 
-                artist = "Aloukik Robbar";
-                composer = "Friends 91.9FM";
+                artist = "SS";
+                composer = "RM";
 
                 Random r = new Random();
 
@@ -376,13 +376,13 @@ public class GenerateTest2Suspense {
 
                     imageUrl = urlImage[r.nextInt(7)];
 
-                    if(songID>=22)
+                    /*if(songID>=22)
                     {
                         artist = "SS";
                         composer = "RM";
-                    }
+                    }*/
 
-                    url += "{\"songID\":\"" + songID + "\", \"title\":\"" + (((songID<23)?songID + 1: songID-22 + "-SS" ) ) + "-" + songName + "\", \"artist\":\"" + artist + "\", \"path\":\"" + songPath + "\", \"albumId\":\"" + albumID + "\", \"composer\":\"" + composer + "\", \"imageUrl\":\"" + imageUrl + "\"},";
+                    url += "{\"songID\":\"" + songID + "\", \"title\":\"" + (((songID<23)?songID + 1: songID+1 + "" ) ) + "-" + songName + "\", \"artist\":\"" + artist + "\", \"path\":\"" + songPath + "\", \"albumId\":\"" + albumID + "\", \"composer\":\"" + composer + "\", \"imageUrl\":\"" + imageUrl + "\"},";
 
                     songID++;
 
@@ -391,7 +391,7 @@ public class GenerateTest2Suspense {
 
                 System.out.println("" + url);
 
-                File file = new File("api-aloukik-robbar/filename_aloukik_robbar.json");
+                File file = new File("filename_sunday_sus_main.json");
 
                 // if file doesnt exists, then create it
                 if (!file.exists()) {

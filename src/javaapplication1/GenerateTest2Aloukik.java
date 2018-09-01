@@ -5,26 +5,28 @@
  */
 package javaapplication1;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.io.*;
+import java.net.*;
+
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.GZIPOutputStream;
 import static javaapplication1.GenerateTest2DK.artist;
 import static javaapplication1.GenerateTest2DK.imageUrl;
+
+//import com.sun.deploy.net.URLEncoder;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  *
@@ -37,204 +39,529 @@ public class GenerateTest2Aloukik {
 //    {"firstName":"Anna", "lastName":"Smith"},
 //    {"firstName":"Peter", "lastName":"Jones"}
 //]}
-//    
-    
-    
-        static int songID;
-        static String title;
-	static String artist;
-	//String album;
-	static String path;
-	static long duration;
-	static long albumId;
-	static String composer;
-        static String imageUrl;
-    
-        static int albumID;
-        static String albumName;
+//
+
+    static int songID;
+    static String title;
+    static String artist;
+    //String album;
+    static String path;
+    static long duration;
+    static long albumId;
+    static String composer;
+    static String imageUrl;
+
+    static int albumID;
+    static String albumName;
     private static Object fis;
 
     private static void readFile() {
         BufferedReader buffreader = null;
         try {
-            
+
             //File file = new File("filename_sunday_sus.txt");
-            File file = new File("filename_sunday_sus_name.txt");
+            File file = new File("radio_sunday_sus/filename_sunday_sus_name_rep.txt");
 
             if (!file.exists()) {
-                    file.createNewFile();
+                file.createNewFile();
             }
 
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
             BufferedWriter bw = new BufferedWriter(fw);
-            
-            //InputStream fis = new FileInputStream("sunday_suspense.txt");     
-            InputStream fis = new FileInputStream("filename_sunday_sus.txt");  
+
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");
+            InputStream fis = new FileInputStream("radio_sunday_sus/filename_sunday_sus_rep.txt");
             // if file the available for reading
             if (fis != null) {
 
-              // prepare the file for reading
-              InputStreamReader chapterReader = new InputStreamReader(fis);
-              buffreader = new BufferedReader(chapterReader);
-              
-              String line = null;
-              while(true)
-              {     try{
-                    line = buffreader.readLine();
-                    String segment = line.substring(46);//33
-                    String fin = segment.substring(0,segment.length()-4);
-                    fin = fin.replace("_", " ");
-                    fin = fin.replace("-", " ");
-                    fin = fin.replace("%28", "");
-                    fin = fin.replace("%27", "");
-                    fin = fin.replace("%29", "");
-                    bw.write( fin+"\n");
-                    
-                    }catch(Exception e)
-                    {
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
+
+                String line = null;
+                while (true) {
+                    try {
+                        line = buffreader.readLine();
+                        String segment = line.substring(46);//33
+                        String fin = segment.substring(0, segment.length() - 4);
+                        fin = fin.replace("_", " ");
+                        fin = fin.replace("-", " ");
+                        fin = fin.replace("%28", "");
+                        fin = fin.replace("%27", "");
+                        fin = fin.replace("%29", "");
+                        bw.write(fin + "\n");
+
+                    } catch (Exception e) {
 
                     }
 
-                    if(line == null) break;
-                    
+                    if (line == null) {
+                        break;
+                    }
+
                     songPath.add(line);
-            
-              }
-              
-              bw.close();
-              
 
-              /*String line;
+                }
 
-              // read every line of the file into the line-variable, on line at the time
-              do {
+                bw.close();
+
+
+                /*String line;
+
+                 // read every line of the file into the line-variable, on line at the time
+                 do {
                  line = buffreader.readLine();
-                // do something with the line 
+                 // do something with the line
                  System.out.println(line);
-              } while (line != null);
-                      */
-
+                 } while (line != null);
+                 */
             }
         } catch (Exception e) {
-            
+
         } finally {
-            
+
         }
         boolean abc = true;
-        if(abc)
-        {
-            return ;
+        if (abc) {
+            return;
         }
+    }
+
+    private static void encryptAndWriteToFile() {
+
+        String[] urlImage = {
+                "http://i.imgur.com/38j0K51.png",
+                "http://i.imgur.com/NPUTTlR.png",
+                "http://i.imgur.com/dO9BzMU.png",
+                "http://i.imgur.com/i2Z2Kdx.png",
+                "http://i.imgur.com/Y42hBNW.jpg",
+                "http://i.imgur.com/l8aYI2s.png",
+                "http://i.imgur.com/GxiKKME.png"
+
+        };
+
+        String[] urlAppName = {
+                "Jiboner Golpo Collection",
+                "Bhoot FM Collection",
+                "Rohosyo Romancho Ghost Story",
+                "Aloukik Robbar",
+                "Kuasha Collection",
+                "Dor Collection",
+                "Sunday Suspense Collection"
+        };
+
+        String[] urlAppPackageName = {
+                "com.studio71.jiboner_golpo_collection",
+                "com.crossappers.bhootfm_collection",
+                "com.studio71.rohosyo_romancho_ghost",
+                "com.studio71.aloukik_robbar",
+                "com.studio71.kuasha_collection",
+                "com.studio71.dor_collection",
+                "com.studio71.sunday_suspense"
+        };
+
+        ArrayList<AppData> appList = new ArrayList<>();
+        for (int i = 0; i < urlAppName.length; i++) {
+            appList.add(new AppData(i, urlAppName[i], urlAppPackageName[i], urlImage[i]));
+        }
+
+        InputStream fis = null;
+        try {
+            fis = new FileInputStream("api-aloukik-robbar/filename_aloukik_robbar.json");
+
+            if (fis != null) {
+
+
+
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                BufferedReader buffreader = new BufferedReader(chapterReader);
+                String fullData = "";
+
+                while (true) {
+                    String tempData = buffreader.readLine();
+                    if (tempData == null) {
+                        break;
+                    }
+
+                    fullData += tempData;
+                }
+
+                JSONObject jsonObject = new JSONObject(fullData);
+                JSONArray jsonArraySong = jsonObject.getJSONArray("songList");
+
+                String songJson = jsonArraySong.toString();
+                byte[] compressedByte = compress(jsonArraySong.toString());
+                String compressedFullData = Base64.getEncoder().encodeToString(compressedByte);
+
+                compressedByte = compress(new Gson().toJson(appList));
+                String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
+
+                Data data = new Data("102", compressedFullData, appListCompressedFullDta);
+
+
+                File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
+
+
+
+                if (!file.exists()) {
+                    file.createNewFile();
+
+                }
+
+
+
+                FileWriter fw = new FileWriter(file.getPath());
+                System.out.println("write 6" );
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(new Gson().toJson(data));
+                bw.close();
+
+                System.out.println("write " + new Gson().toJson(data));
+            }
+
+        } catch (FileNotFoundException ex) {
+            System.out.println("write 3");
+        } catch (IOException ex) {
+            System.out.println("write 2");
+        }
+
+        System.out.println("write 1");
+
+    }
+
+    private static void findTheOriginalUrl() {
+        try{
+            File file = new File("radio_sunday_sus/filename_sunday_sus_orig_url.txt");
+
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");
+            InputStream fis = new FileInputStream("sunday_outputfileName64.txt");
+            // if file the available for reading
+            if (fis != null) {
+
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                BufferedReader buffreader = new BufferedReader(chapterReader);
+
+                String line = null;
+                while (true) {
+                    try {
+                        line = buffreader.readLine();
+                    } catch (Exception e) {
+
+                    }
+
+                    if (line == null) {
+                        break;
+                    }
+
+
+                    System.out.println("fake: " + line);
+                    String url = getFinalURL(line);
+                    System.out.println("url " + url);
+                    bw.write(url + "\n");
+
+                }
+
+                bw.close();
+
+
+                /*String line;
+
+                 // read every line of the file into the line-variable, on line at the time
+                 do {
+                 line = buffreader.readLine();
+                 // do something with the line
+                 System.out.println(line);
+                 } while (line != null);
+                 */
+            }
+        } catch (Exception e) {
+            System.out.println("" + e.toString());
+        } finally {
+
+        }
+    }
+
+    public static String getFinalURL(String url) throws IOException {
+        HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
+        con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
+
+        con.setInstanceFollowRedirects(false);
+        con.connect();
+        con.getInputStream();
+
+        if (con.getResponseCode() == HttpURLConnection.HTTP_MOVED_PERM || con.getResponseCode() == HttpURLConnection.HTTP_MOVED_TEMP) {
+            String redirectUrl = con.getHeaderField("Location");
+            return getFinalURL(redirectUrl);
+        }
+        return url;
     }
 
     ArrayList<String> songList = new ArrayList<>();
     static ArrayList<String> songPath = new ArrayList<>();
-        
-    static List<String> songPathList = null;
-    static List<String> songNameList = null;
-    private static void readFromStringArray() 
-    {
-        songNameList = new ArrayList<String>();
-        songPathList = new ArrayList(Arrays.asList(new String[] { "http://www.mediafire.com/file/7yq4f37rmq3d89p/Accident-Priyonkar_Roychowdhury.mp3", "http://www.mediafire.com/file/0vacj6mxknups3c/Adbhut_Akorshon-Monorom_Guhothakurota.mp3", "http://www.mediafire.com/file/njf3v0om6yp2p94/Ahalya_Manjil.mp3", "http://www.mediafire.com/file/9mgm158p5uicom7/Ankita.mp3", "http://www.mediafire.com/file/wgnuvm54p0uouk1/Aschorjo_Coin.mp3", "http://www.mediafire.com/file/nzutplt6cb1mq3b/Bahurupi.mp3", "http://www.mediafire.com/file/14qv7dwkmihqnu1/Bhoy-Bamaprasad_Mukhapadhyay.mp3", "http://www.mediafire.com/file/uy7s05ee54lmr60/Bileter_Bhuture_Bari-Lila_Majumdar.mp3", "http://www.mediafire.com/file/606a154erl126zz/Caretaker-Chanda_Guha.mp3", "http://www.mediafire.com/file/9bc45rt8sk4ipa1/Chayamot-Anirudhra_Choudhyry.mp3", "http://www.mediafire.com/file/8nv3o1cayhjzoe2/Chitrakar.mp3", "http://www.mediafire.com/file/mss5x4bqtsfn1ws/Chitrangada.mp3", "http://www.mediafire.com/file/grl0sy3ekr7ae3k/Cycle.mp3", "http://www.mediafire.com/file/30cwfcpc330eocs/Daju.mp3", "http://www.mediafire.com/file/c8hszluv538ly96/Dhurjotibabur_Planchit-Himadrikishore_Dasgupta.mp3", "http://www.mediafire.com/file/22p8ns4qdjjcudc/Dibakar.mp3", "http://www.mediafire.com/file/hvzlk13m468ffbo/Doctor_Pakrashi_O_Nil_Phul.mp3", "http://www.mediafire.com/file/5x5p95yn0pq85i3/Dr._Pakrashi_R_Dragon_Aka_Ayna.mp3", "http://www.mediafire.com/file/dc6vthy64pdqhvh/Dr._Pakrashi-er_Aloukik_Bislashan.mp3", "http://www.mediafire.com/file/viewlm9yppxec9e/Ema.mp3", "http://www.mediafire.com/file/z8cqi8o7lxa5zs2/Gaach_Manobi.mp3", "http://www.mediafire.com/file/6wkcqftfsw51ydt/Ghaar_Beka_Bajna.mp3", "http://www.mediafire.com/file/0dfjnrcoci64o2q/Gogol_R_Baganbarir_Rahoshyomoy_Ghori.mp3", "http://www.mediafire.com/file/j9q99188f225akz/Haranath_er_Mrityu_Sakhi.mp3", "http://www.mediafire.com/file/dhxh2tf53etplr6/Jonmodin.mp3", "http://www.mediafire.com/file/e6j75886y340eic/Kaak.mp3", "http://www.mediafire.com/file/rlg5jvdud5258oq/Majraater_Call-Premendra_Mitra.mp3", "http://www.mediafire.com/file/apfl2c6t703mftc/Mithir_Ma.mp3", "http://www.mediafire.com/file/kvqq004cgnwari4/Mora_Katar_Bhoye.mp3", "http://www.mediafire.com/file/o51v3bmslozb5y6/Nirakarer_Kahini_By_Sasthipada_Chattopadhyay.mp3", "http://www.mediafire.com/file/wgtgac461ulxae0/Noksha.mp3", "http://www.mediafire.com/file/58d59dkah46qfkk/Rakhttaktto_Canvas-Amitava_Roychawdhary.mp3", "http://www.mediafire.com/file/xma3b9ezek0q913/Rater_Ashroy-Monoj_Basu.mp3", "http://www.mediafire.com/file/csot67gpguar159/Rohoshyomoy_Gari_Guli.mp3", "http://www.mediafire.com/file/cdeavgnxgj7uua5/Sada.Ghora.Anil.Bhoumik.mp3", "http://www.mediafire.com/file/7n8gs1wacyaoo8t/Santanu-er_Jonmodin.mp3", "http://www.mediafire.com/file/znf1qqs6c7q74f7/Shopoth-Pamela_Hansford_Johnson.mp3", "http://www.mediafire.com/file/2xg9aba8eiow75a/Swapno_Chikitsa.mp3", "http://www.mediafire.com/file/s166ysnst4t2sdg/Swarup_Babur_Bhul.mp3" }));
-        int songID = 0;
-        while(songID<songPathList.size())
-        {     
-            try{
-                String line = songPathList.get(songID);
-                String segment = line.substring(46);//33
-                String fin = segment.substring(0,segment.length()-4);
-                fin = fin.replace("_", " ");
-                fin = fin.replace("-", " ");
-                fin = fin.replace("%28", "");
-                fin = fin.replace("%27", "");
-                fin = fin.replace("%29", "");
-                
-                songNameList.add(fin);
 
-              }catch(Exception e)
-              {
+    //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
+    public static void main(String[] args) throws IOException {
 
-              }
-            
-            songID++;
-
-        }    
-    }
-    
-    public static void main(String[] args) throws IOException
-    {
-        
+        //();
+        //if(true)return;
         //readFile();
-        readFromStringArray();
-        
+        //encryptAndWriteToFile();
+        //findTheOriginalUrl();
+
+        //generateGCSFileUrl();
+        //if(true) return;
+
         String[] urlImage = {
-            "http://i.imgur.com/DMmPf5f.jpg",
-            "http://i.imgur.com/8C3N9lN.jpg",
-            "http://i.imgur.com/MGQSXb1.jpg",
-            "http://i.imgur.com/nyv8gOD.jpg",
-            "http://i.imgur.com/kzr9p5M.jpg",
-            "http://i.imgur.com/nBTPbty.jpg",
+                "http://i.imgur.com/DMmPf5f.jpg",
+                "http://i.imgur.com/8C3N9lN.jpg",
+                "http://i.imgur.com/LGsUamV.jpg",
+                "http://i.imgur.com/DrWxBD3.jpg",
+                "http://i.imgur.com/kzr9p5M.jpg",
+                "http://i.imgur.com/X4pn6lX.jpg",
                 "http://i.imgur.com/VvLI4sY.jpg"
-                
+
         };
-        
+
+        BufferedReader buffreader;
+        BufferedReader buffreader2;
         try {
 
-            String songPath = null;
-            String songName = null;
+            //File file = new File("filename_sunday_sus.txt");
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");
+            InputStream fis = new FileInputStream("sunday_outputfileName_url_bangla.txt");
+            InputStream fis2 = new FileInputStream("sunday_outputfileName_name_bangla.txt");
+            // if file the available for reading
+            if (fis != null) {
 
-            String url = "{\"songList\":[";
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
 
-            int songID = 0;
+                InputStreamReader chapterReader2 = new InputStreamReader(fis2);
+                buffreader2 = new BufferedReader(chapterReader2);
 
-            artist = "Aloukik Robbar";
-            composer = "friends fm 91.9";
+                String songPath = null;
+                String songName = null;
 
-            Random r = new Random();
+                String url = "{\"songList\":[";
 
-            while(songID < songPathList.size())
-            {     
+                songID = 0;
 
-                  songPath = songPathList.get(songID);
-                  songName = songNameList.get(songID);
+                artist = "Aloukik Robbar";
+                composer = "Friends 91.9FM";
 
-                  if(songPath == null) break;
+                Random r = new Random();
 
-                  imageUrl = urlImage[r.nextInt(7)];
+                while (true) {
 
-                  url += "{\"songID\":\""+songID+"\", \"title\":\""+(songID+1)+"-"+songName +"\", \"artist\":\""+artist+ "\", \"path\":\""+songPath+ "\", \"albumId\":\""+albumID+ "\", \"composer\":\""+composer+ "\", \"imageUrl\":\""+imageUrl +"\"},";
+                    songPath = buffreader.readLine();
+                    songName = buffreader2.readLine();
 
-                  System.out.println("fahaad " + url);
-                  songID++;
+                    if (songPath == null) {
+                        break;
+                    }
 
-            }
-            url = url.substring(0, url.length()-1) + "]}";
+                    songName = songName.replace("SS", "");
+                    songName = songName.replace("64ks", "");
+                    songName = songName.replace(".mp3", "");
 
-            System.out.println(""+url);
 
-            File file = new File("filename_aloukik_robbar.json");
+                    imageUrl = urlImage[r.nextInt(7)];
 
-            // if file doesnt exists, then create it
-            if (!file.exists()) {
+                    if(songID>=22)
+                    {
+                        artist = "SS";
+                        composer = "RM";
+                    }
+
+                    url += "{\"songID\":\"" + songID + "\", \"title\":\"" + (((songID<23)?songID + 1: songID-22 + "-SS" ) ) + "-" + songName + "\", \"artist\":\"" + artist + "\", \"path\":\"" + songPath + "\", \"albumId\":\"" + albumID + "\", \"composer\":\"" + composer + "\", \"imageUrl\":\"" + imageUrl + "\"},";
+
+                    songID++;
+
+                }
+                url = url.substring(0, url.length() - 1) + "]}";
+
+                System.out.println("" + url);
+
+                File file = new File("api-aloukik-robbar/filename_aloukik_robbar.json");
+
+                // if file doesnt exists, then create it
+                if (!file.exists()) {
                     file.createNewFile();
+                }
+
+                FileWriter fw = new FileWriter(file.getAbsoluteFile());
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(url);
+                bw.close();
+
+                System.out.println("Done");
+
             }
+        } catch (Exception e) {
+            System.out.println("exception " +e.toString());
+        } finally {
+
+        }
+
+        encryptAndWriteToFile();
+
+    }
+
+    class Song{
+        int songID;
+        String title;
+        String artist;
+        String path;
+        String albumId;
+        String composer;
+        String imageUrl;
+    }
+
+    private static void readFile2() {
+
+        BufferedReader buffreader;
+
+        try {
+
+            InputStream fis = new FileInputStream("new  2.txt");
+
+            if (fis != null) {
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
+                String songPath = "";
+
+
+                songID = 41;
+
+                while (true) {
+                    String line = buffreader.readLine();
+
+                    if ( line == null) {
+                        break;
+                    }
+                    songPath += line;
+                }
+
+                Gson gson  = new Gson();
+                List<Song> songList = Arrays.asList(gson.fromJson(songPath, Song[].class));
+
+                for(Song song: songList)
+                {
+                    song.songID = songID++;
+                }
+
+                File file = new File("aloukik_sunday.txt");
+
+                // if file doesnt exists, then create it
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+
+                FileWriter fw = new FileWriter(file.getAbsoluteFile());
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(gson.toJson(songList));
+                bw.close();
+
+                System.out.println("Done");
+
+            }
+        } catch (Exception e) {
+            System.out.println("exception " +e.toString());
+        } finally {
+
+        }
+    }
+
+    public static byte[] compress(String data) throws IOException {
+        ByteArrayOutputStream bos = new ByteArrayOutputStream(data.length());
+        GZIPOutputStream gzip = new GZIPOutputStream(bos);
+        gzip.write(data.getBytes());
+        gzip.close();
+        byte[] compressed = bos.toByteArray();
+        bos.close();
+        return compressed;
+    }
+
+    public static void generateGCSFileUrl()
+    {
+
+        String lineArray[] = new String[75];
+        File folder = new File("D:\\sunday");
+        File[] listOfFiles = folder.listFiles();
+
+        try{
+            File file = new File("new 2.txt");
+
 
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(url);
-            bw.close();
+            BufferedReader buffreader;
 
-            System.out.println("Done");
+            //InputStream fis = new FileInputStream("sunday_suspense.txt");
+            InputStream fis = new FileInputStream("new  2.txt");
+            // if file the available for reading
+            if (fis != null) {
+
+                // prepare the file for reading
+                InputStreamReader chapterReader = new InputStreamReader(fis);
+                buffreader = new BufferedReader(chapterReader);
+
+                int i = 0;
+                String line;
+                do {
+                    line = buffreader.readLine();
+                    lineArray[i++] = line;
+                    if(i==72) break;
+                } while (line != null);
+
+                bw.close();
 
 
-            
+
+            }
         } catch (Exception e) {
-            
+
         } finally {
-            
+
         }
 
+        for (int i = 0; i < listOfFiles.length; i++) {
+            if (listOfFiles[i].isFile()) {
+
+                String name = listOfFiles[i].getName().replaceAll(" ", "_");
+                lineArray[i] = lineArray[i].replace("folder", "file");
+                try {
+                    URL url= new URL(lineArray[i] +"/" + name);
+                    URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
+
+                    String urlStr=uri.toASCIIString();
+                    System.out.println(urlStr);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (URISyntaxException e) {
+                    e.printStackTrace();
+                }
+
+                //String name = listOfFiles[i].getName().replaceAll(" ", "_");
+                //name = name.replaceAll(".mp3", "");
+                //name = name.replaceAll(" 64ks", "");
+                //name = name.replaceAll(" SS", "");
+
+
+                //System.out.println(name);
+            } else if (listOfFiles[i].isDirectory()) {
+                System.out.println("Directory " + listOfFiles[i].getName());
+            }
+        }
     }
 
-    
 }
