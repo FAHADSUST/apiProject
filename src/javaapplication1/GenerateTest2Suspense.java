@@ -142,12 +142,12 @@ public class GenerateTest2Suspense {
         String[] urlAppName = {
             "Aloukik Robbar + Sunday Suspense Collection",
             "Jiboner Golpo Collection",
-            "Bhoot FM Collection",
             "Sunday Suspense Collection\n" +
                     "Note: On request of Radio Mirchi we\n" +
                     "have to remove the app from play store.\n" +
                     "But you guys can enjoy all episode\n" +
                     "include new one in Aloukik Robbar App" ,
+            "Rohosyo Romancho Ghost Story",
             "Kuasha Collection",
             "Dor Collection",
             "Bhoot FM Collection"
