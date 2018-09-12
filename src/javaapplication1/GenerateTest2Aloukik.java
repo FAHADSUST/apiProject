@@ -199,7 +199,7 @@ public class GenerateTest2Aloukik {
                 compressedByte = compress(new Gson().toJson(appList));
                 String appListCompressedFullDta = Base64.getEncoder().encodeToString(compressedByte);
 
-                Data data = new Data("104", compressedFullData, appListCompressedFullDta);
+                Data data = new Data("105", compressedFullData, appListCompressedFullDta);
 
 
                 File file = new File("api-aloukik-robbar/filename_aloukik_robbar_2.json");
