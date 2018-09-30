@@ -6,13 +6,16 @@
 package javaapplication1;
 
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import com.google.gson.Gson;
+import javaapplication1.model.AlbumList;
+import javaapplication1.model.MonthList;
+import javaapplication1.model.MyPojo;
+import javaapplication1.model.SongList;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;
 import org.joda.time.format.DateTimeFormat;
@@ -48,8 +51,58 @@ public class GenerateTest {
         ArrayList<String> songList = new ArrayList<>();
         
     //http://dl.bhoot-fm.com/Bhoot-FM_2016-10-28_(Bhoot-FM.com).mp3
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
+
+        new GenerateTest().generate2();
+    }
+
+    public void generate2() throws IOException {
+        File file2 = new File("filename.txt");
+
+        BufferedReader br = new BufferedReader(new FileReader(file2));
+
+        String st;
+        String fullText = "";
+        while ((st = br.readLine()) != null)
+        {
+            System.out.println(st);
+            fullText+=st;
+        }
+
+        Gson gson = new Gson();
+        MyPojo myPojo = gson.fromJson(fullText, MyPojo.class);
+
+        for(AlbumList albumList: myPojo.getAlbumList())
+        {
+            for(MonthList monthList: albumList.getMonthList())
+            {
+                for(SongList songList : monthList.getSongList())
+                {
+                    if(songList.getPath().contains("fusionbd"))
+                    {
+                        songList.setPath("http://dl.bhoot-fm.com/"+albumList.getYearName().substring(5)+"/Bhoot-FM_"+songList.getTitle().substring(3)+"_(Bhoot-FM.com).mp3");
+                    }
+                }
+            }
+        }
+
+        File file = new File("filename2.txt");
+
+        // if file doesnt exists, then create it
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+
+        FileWriter fw = new FileWriter(file.getAbsoluteFile());
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(gson.toJson(myPojo));
+        bw.close();
+
+        System.out.println("Done");
+
+    }
+
+    public void genereate1() throws IOException {
         String[] monthStr = {"January",      
             "February",
             "March",        
