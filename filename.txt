@@ -5426,6 +5426,67 @@
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"https://m.bdlove24.com/files/Radio_Episode/BhootCom_all_Episode_With_Rj_Russell/Bhoot.Com_by_Rj_Russell_Episode_14_15_May_2020_bdlove24.com.mp3",
                      "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"504",
+                     "title":"(New)Ep-2020-05-22",
+                     "albumId":"115",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35060/Bhoot.Com-15th%20Episode-22%20May%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"505",
+                     "title":"(New)Eid Special Episode 01-Srimongole Bhoy",
+                     "albumId":"115",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35150/Bhoot.Com-Eid%20Special%20Episode%2001-Srimongole%20Bhoy-24%20May%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"506",
+                     "title":"(New)Eid Special Episode 02-Jailkhanar Bhoy",
+                     "albumId":"115",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35151/Bhoot.Com-Eid%20Special%20Episode%2002-Jailkhanar%20Bhoy-25%20May%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"507",
+                     "title":"(New)Ep-29 May 2020",
+                     "albumId":"115",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35152/Bhoot.Com-16th%20Episode-29%20May%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  }
+               ]
+            },
+            {
+               "albumName":"June[New]",
+               "songListRange":"439-441",
+               "albumID":"116",
+               "songList":[
+                  {
+                     "composer":"",
+                     "songID":"508",
+                     "title":"(New)05 June 2020",
+                     "albumId":"116",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35164/Bhoot.Com-17th%20Episode-05%20June%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"509",
+                     "title":"(New)12 June 2020",
+                     "albumId":"116",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35220/Bhoot.Com-18th%20Episode-12%20June%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
                   }
                ]
             }
