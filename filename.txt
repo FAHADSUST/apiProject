@@ -5487,6 +5487,15 @@
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35220/Bhoot.Com-18th%20Episode-12%20June%202020-(MuzicBD.Com).mp3",
                      "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"510",
+                     "title":"(New)26 June 2020",
+                     "albumId":"116",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35220/Bhoot.Com-18th%20Episode-12%20June%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
                   }
                ]
             },
@@ -5497,7 +5506,7 @@
                "songList":[
                   {
                      "composer":"",
-                     "songID":"510",
+                     "songID":"3510",
                      "title":"(New)Episode 1.A",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5505,7 +5514,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"511",
+                     "songID":"3511",
                      "title":"(New)Episode 1.B",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5513,7 +5522,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"512",
+                     "songID":"3512",
                      "title":"(New)Episode 1.C",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5521,7 +5530,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"513",
+                     "songID":"3513",
                      "title":"(New)Episode 1.D",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5530,7 +5539,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"514",
+                     "songID":"3514",
                      "title":"(New)Episode 2",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5539,7 +5548,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"515",
+                     "songID":"3515",
                      "title":"(New)Episode 3",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5548,7 +5557,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"516",
+                     "songID":"3516",
                      "title":"(New)Episode 4",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5557,7 +5566,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"517",
+                     "songID":"3517",
                      "title":"(New)Episode 5",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5566,7 +5575,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"518",
+                     "songID":"3518",
                      "title":"(New)Episode 6",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5575,7 +5584,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"519",
+                     "songID":"3519",
                      "title":"(New)Episode 7",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5583,7 +5592,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"520",
+                     "songID":"3520",
                      "title":"(New)Episode 8",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5592,7 +5601,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"521",
+                     "songID":"3521",
                      "title":"(New)Episode 9",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5601,7 +5610,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"522",
+                     "songID":"3522",
                      "title":"(New)Episode 10",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5610,7 +5619,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"523",
+                     "songID":"3523",
                      "title":"(New)Episode 11",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5619,7 +5628,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"524",
+                     "songID":"3524",
                      "title":"(New)Episode 12",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5628,7 +5637,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"525",
+                     "songID":"3525",
                      "title":"(New)Episode 13",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5637,7 +5646,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"526",
+                     "songID":"3526",
                      "title":"(New)Episode 14",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5645,7 +5654,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"501",
+                     "songID":"3501",
                      "title":"(New)Episode 15",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5654,7 +5663,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"527",
+                     "songID":"3527",
                      "title":"(New)Episode 16",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5663,7 +5672,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"528",
+                     "songID":"3528",
                      "title":"(New)Episode 17",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5672,7 +5681,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"529",
+                     "songID":"3529",
                      "title":"(New)Episode 18",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5681,7 +5690,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"530",
+                     "songID":"3530",
                      "title":"(New)Episode 19",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5690,7 +5699,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"531",
+                     "songID":"3531",
                      "title":"(New)Episode 20",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5699,7 +5708,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"532",
+                     "songID":"3532",
                      "title":"(New)Episode 21",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5708,7 +5717,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"533",
+                     "songID":"3533",
                      "title":"(New)Episode 22",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5717,7 +5726,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"534",
+                     "songID":"3534",
                      "title":"(New)Episode 23",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5726,7 +5735,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"535",
+                     "songID":"3535",
                      "title":"(New)Episode 24",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5735,7 +5744,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"536",
+                     "songID":"3536",
                      "title":"(New)Episode 25",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5744,8 +5753,17 @@
                   },
                   {
                      "composer":"",
-                     "songID":"537",
+                     "songID":"3537",
                      "title":"(New)Episode 26",
+                     "albumId":"117",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"3538",
+                     "title":"(New)Episode 27",
                      "albumId":"117",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
@@ -5760,7 +5778,7 @@
                "songList":[
                   {
                      "composer":"",
-                     "songID":"538",
+                     "songID":"4538",
                      "title":"(New)Episode 1",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5768,7 +5786,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"539",
+                     "songID":"4539",
                      "title":"(New)Episode 1.1",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5777,7 +5795,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"540",
+                     "songID":"4540",
                      "title":"(New)Episode 2",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5786,7 +5804,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"541",
+                     "songID":"4541",
                      "title":"(New)Episode 3",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5795,7 +5813,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"542",
+                     "songID":"4542",
                      "title":"(New)Episode 4",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5804,7 +5822,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"543",
+                     "songID":"4543",
                      "title":"(New)Episode 5",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5813,7 +5831,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"544",
+                     "songID":"4544",
                      "title":"(New)Episode 6",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5822,7 +5840,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"545",
+                     "songID":"4545",
                      "title":"(New)Episode 7",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5830,7 +5848,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"546",
+                     "songID":"4546",
                      "title":"(New)Episode 8",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5839,7 +5857,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"547",
+                     "songID":"4547",
                      "title":"(New)Episode 9",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5848,7 +5866,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"548",
+                     "songID":"4548",
                      "title":"(New)Episode 10",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5857,7 +5875,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"549",
+                     "songID":"4549",
                      "title":"(New)Episode 11",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5866,7 +5884,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"550",
+                     "songID":"4550",
                      "title":"(New)Episode 12",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5875,7 +5893,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"551",
+                     "songID":"4551",
                      "title":"(New)Episode 13",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5884,7 +5902,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"552",
+                     "songID":"4552",
                      "title":"(New)Episode 14",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5892,7 +5910,7 @@
                      "artist":"Bhoot-Fm"
                   },{
                      "composer":"",
-                     "songID":"553",
+                     "songID":"4553",
                      "title":"(New)Episode 15",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5901,7 +5919,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"554",
+                     "songID":"4554",
                      "title":"(New)Episode 16",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5910,7 +5928,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"555",
+                     "songID":"4555",
                      "title":"(New)Episode 17",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5919,7 +5937,7 @@
                   },
                   {
                      "composer":"",
-                     "songID":"556",
+                     "songID":"4556",
                      "title":"(New)Episode 18",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
@@ -5928,8 +5946,8 @@
                   },
                   {
                      "composer":"",
-                     "songID":"557",
-                     "title":"(New)Episode 19",
+                     "songID":"4557",
+                     "title":"Episode 19",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35156/Bhoutiggota-Episode%2019-04%20June%202020-(MuzicBD.Com).mp3",
@@ -5937,8 +5955,8 @@
                   },
                   {
                      "composer":"",
-                     "songID":"558",
-                     "title":"(New)Episode 20",
+                     "songID":"4558",
+                     "title":"Episode 20",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35174/Bhoutiggota-Episode%2020-11%20June%202020-(MuzicBD.Com).mp3",
@@ -5946,11 +5964,20 @@
                   },
                   {
                      "composer":"",
-                     "songID":"559",
-                     "title":"(New)Episode 21",
+                     "songID":"4559",
+                     "title":"Episode 21",
                      "albumId":"119",
                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35287/Bhoutiggota-Episode%2021-18%20June%202020-(MuzicBD.Com).mp3",
+                     "artist":"Bhoot-Fm"
+                  },
+                  {
+                     "composer":"",
+                     "songID":"4560",
+                     "title":"(New)Episode 21",
+                     "albumId":"119",
+                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35322/Bhoutiggota-Episode%2022-25%20June%202020-(MuzicBD.Com).mp3",
                      "artist":"Bhoot-Fm"
                   }
                ]
