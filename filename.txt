@@ -5275,489 +5275,496 @@
          "yearID":"10",
          "yearName":"YEAR-2020[New Episodes]",
          "monthList":[
-            {
-               "albumName":"Odvootoore",
-               "songListRange":"439-441",
-               "albumID":"117",
-               "songList":[
-                  {
-                     "composer":"",
-                     "songID":"510",
-                     "title":"(New)Episode 1.A",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33825/Odvootoore-Episode%2001-03%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"511",
-                     "title":"(New)Episode 1.B",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33827/Odvootoore-Episode%2002-10%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"512",
-                     "title":"(New)Episode 1.C",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33829/Odvootoore-Episode%2003-17%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"513",
-                     "title":"(New)Episode 1.D",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33830/Odvootoore-Episode%2004-24%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"514",
-                     "title":"(New)Episode 2",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33832/Odvootoore-Episode%2005-31%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"515",
-                     "title":"(New)Episode 3",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33834/Odvootoore-Episode%2006-07%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"516",
-                     "title":"(New)Episode 4",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33840/Odvootoore-Episode%2007-14%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"517",
-                     "title":"(New)Episode 5",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33844/Odvootoore-Episode%2008-21%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"518",
-                     "title":"(New)Episode 6",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33845/Odvootoore-Episode%2009-28%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"519",
-                     "title":"(New)Episode 7",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33847/Odvootoore-Episode%2010-06%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"520",
-                     "title":"(New)Episode 8",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"521",
-                     "title":"(New)Episode 9",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33849/Odvootoore-Episode%2011-13%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"522",
-                     "title":"(New)Episode 10",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33851/Odvootoore-Episode%2012-19%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"523",
-                     "title":"(New)Episode 11",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33853/Odvootoore-Episode%2013-27%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"524",
-                     "title":"(New)Episode 12",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33855/Odvootoore-Episode%2014-03%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"525",
-                     "title":"(New)Episode 13",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33857/Odvootoore-Episode%2015-10%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"526",
-                     "title":"(New)Episode 14",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33859/Odvootoore-Episode%2016-17%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"501",
-                     "title":"(New)Episode 15",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"527",
-                     "title":"(New)Episode 16",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33861/Odvootoore-Episode%2017-23%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"528",
-                     "title":"(New)Episode 17",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd69/34154/Odvootoore-Episode%2018-01%20May%202020-Low%20Quality-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"529",
-                     "title":"(New)Episode 18",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd69/34155/Odvootoore-Episode%2018-01%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"530",
-                     "title":"(New)Episode 19",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd70/34580/Odvootoore-Episode%2019-09%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"531",
-                     "title":"(New)Episode 20",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd70/34756/Odvootoore-Episode%2020-15%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"532",
-                     "title":"(New)Episode 21",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35058/Odvootoore-Episode%2021-22%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"533",
-                     "title":"(New)Episode 22",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35146/Odvootoore-Episode%2022-Eid%20Special-25%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"534",
-                     "title":"(New)Episode 23",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35147/Odvootoore-Episode%2023-29%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"535",
-                     "title":"(New)Episode 24",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35166/Odvootoore-Episode%2024-05%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"536",
-                     "title":"(New)Episode 25",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35218/Odvootoore-Episode%2025-12%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"537",
-                     "title":"(New)Episode 26",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"561",
-                     "title":"(New)Episode 27",
-                     "albumId":"117",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  }
-               ]
-            },
-            {
-               "albumName":"Bhoutiggota",
-               "songListRange":"439-441",
-               "albumID":"119",
-               "songList":[
-                  {
-                     "composer":"",
-                     "songID":"538",
-                     "title":"(New)Episode 1",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33799/Bhoutiggota-Episode%2001-30%20January%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"539",
-                     "title":"(New)Episode 1.1",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33801/Bhoutiggota-Episode%2002-06%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"540",
-                     "title":"(New)Episode 2",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33803/Bhoutiggota-Episode%2003-14%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"541",
-                     "title":"(New)Episode 3",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33805/Bhoutiggota-Episode%2004-21%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"542",
-                     "title":"(New)Episode 4",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33807/Bhoutiggota-Episode%2005-27%20February%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"543",
-                     "title":"(New)Episode 5",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33809/Bhoutiggota-Episode%2006-05%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"544",
-                     "title":"(New)Episode 6",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33811/Bhoutiggota-Episode%2007-12%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"545",
-                     "title":"(New)Episode 7",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33813/Bhoutiggota-Episode%2008-19%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"546",
-                     "title":"(New)Episode 8",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"547",
-                     "title":"(New)Episode 9",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33816/Bhoutiggota-Episode%2009-26%20March%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"548",
-                     "title":"(New)Episode 10",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33817/Bhoutiggota-Episode%2010-02%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"549",
-                     "title":"(New)Episode 11",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33819/Bhoutiggota-Episode%2011-09%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"550",
-                     "title":"(New)Episode 12",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33821/Bhoutiggota-Episode%2012-16%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"551",
-                     "title":"(New)Episode 13",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd68/33823/Bhoutiggota-Episode%2013-23%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"552",
-                     "title":"(New)Episode 14",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd69/34045/Bhoutiggota-Episode%2014-30%20April%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },{
-                     "composer":"",
-                     "songID":"553",
-                     "title":"(New)Episode 15",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd69/34389/Bhoutiggota-Episode%2015-07%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"554",
-                     "title":"(New)Episode 16",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd70/34695/Bhoutiggota-Episode%2016-14%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"555",
-                     "title":"(New)Episode 17",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35129/Bhoutiggota-Episode%2017-Eid%20Special-25%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"556",
-                     "title":"(New)Episode 18",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35137/Bhoutiggota-Episode%2018-28%20May%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"557",
-                     "title":"Episode 19",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35156/Bhoutiggota-Episode%2019-04%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"558",
-                     "title":"Episode 20",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35174/Bhoutiggota-Episode%2020-11%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"559",
-                     "title":"Episode 21",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35287/Bhoutiggota-Episode%2021-18%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  },
-                  {
-                     "composer":"",
-                     "songID":"560",
-                     "title":"(New)Episode 22",
-                     "albumId":"119",
-                     "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
-                     "path":"http://muzicbd.net/siteuploads/files/sfd71/35322/Bhoutiggota-Episode%2022-25%20June%202020-(MuzicBD.Com).mp3",
-                     "artist":"Bhoot-Fm"
-                  }
-               ]
-            }
+         {
+            "albumName":"January",
+            "songListRange":"439-441",
+            "albumID":"114",
+            "songList":[
+               {
+                 "composer":"Bhoutiggota",
+                 "songID":"490",
+                 "title":"(New)Bhoutiggota 1",
+                 "albumId":"114",
+                 "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                 "path":"http://muzicbd.net/siteuploads/files/sfd68/33799/Bhoutiggota-Episode%2001-30%20January%202020-(MuzicBD.Com).mp3",
+                 "artist":"Bhoutiggota"
+              },
+               {
+                  "composer":"",
+                  "songID":"491",
+                  "title":"(New)Odvootoore 1",
+                  "albumId":"114",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33825/Odvootoore-Episode%2001-03%20January%202020-(MuzicBD.Com).mp3",
+                  "artist":"Odvootoore"
+               },{
+                  "composer":"",
+                  "songID":"492",
+                  "title":"(New)Odvootoore 2",
+                  "albumId":"114",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33827/Odvootoore-Episode%2002-10%20January%202020-(MuzicBD.Com).mp3",
+                  "artist":"Odvootoore"
+               },{
+                  "composer":"",
+                  "songID":"493",
+                  "title":"(New)Odvootoore 3",
+                  "albumId":"114",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33829/Odvootoore-Episode%2003-17%20January%202020-(MuzicBD.Com).mp3",
+                  "artist":"Odvootoore"
+               },{
+                  "composer":"",
+                  "songID":"494",
+                  "title":"(New)Odvootoore 4",
+                  "albumId":"114",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33830/Odvootoore-Episode%2004-24%20January%202020-(MuzicBD.Com).mp3",
+                  "artist":"Odvootoore"
+               },
+               {
+                  "composer":"",
+                  "songID":"495",
+                  "title":"(New)Odvootoore 5",
+                  "albumId":"114",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33832/Odvootoore-Episode%2005-31%20January%202020-(MuzicBD.Com).mp3",
+                  "artist":"Odvootoore"
+               }
+            ]
+         },{
+            "albumName":"February",
+            "songListRange":"439-441",
+            "albumID":"115",
+            "songList":[
+               {
+                    "composer":"",
+                    "songID":"496",
+                    "title":"(New)Odvootoore 6",
+                    "albumId":"115",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33834/Odvootoore-Episode%2006-07%20February%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"497",
+                    "title":"(New)Odvootoore 7",
+                    "albumId":"115",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33840/Odvootoore-Episode%2007-14%20February%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"498",
+                    "title":"(New)Odvootoore 8",
+                    "albumId":"115",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33844/Odvootoore-Episode%2008-21%20February%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"499",
+                    "title":"(New)Odvootoore 9",
+                    "albumId":"115",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33845/Odvootoore-Episode%2009-28%20February%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                   "composer":"",
+                   "songID":"500",
+                   "title":"(New)Bhoutiggota 2",
+                   "albumId":"115",
+                   "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                   "path":"http://muzicbd.net/siteuploads/files/sfd68/33801/Bhoutiggota-Episode%2002-06%20February%202020-(MuzicBD.Com).mp3",
+                   "artist":"Bhoutiggota"
+                },
+                {
+                   "composer":"",
+                   "songID":"501",
+                   "title":"(New)Bhoutiggota 3",
+                   "albumId":"115",
+                   "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                   "path":"http://muzicbd.net/siteuploads/files/sfd68/33803/Bhoutiggota-Episode%2003-14%20February%202020-(MuzicBD.Com).mp3",
+                   "artist":"Bhoutiggota"
+                },
+                {
+                   "composer":"",
+                   "songID":"502",
+                   "title":"(New)Bhoutiggota 4",
+                   "albumId":"115",
+                   "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                   "path":"http://muzicbd.net/siteuploads/files/sfd68/33805/Bhoutiggota-Episode%2004-21%20February%202020-(MuzicBD.Com).mp3",
+                   "artist":"Bhoutiggota"
+                },
+                {
+                   "composer":"",
+                   "songID":"503",
+                   "title":"(New)Bhoutiggota 5",
+                   "albumId":"115",
+                   "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                   "path":"http://muzicbd.net/siteuploads/files/sfd68/33807/Bhoutiggota-Episode%2005-27%20February%202020-(MuzicBD.Com).mp3",
+                   "artist":"Bhoutiggota"
+                }
+            ]
+         },{
+            "albumName":"March",
+            "songListRange":"439-441",
+            "albumID":"116",
+            "songList":[
+               {
+                    "composer":"",
+                    "songID":"504",
+                    "title":"(New)Bhoutiggota 11",
+                    "albumId":"116",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33849/Odvootoore-Episode%2011-13%20March%202020-(MuzicBD.Com).mp3",
+                    "artist":"Bhoutiggota"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"505",
+                    "title":"(New)Bhoutiggota 12",
+                    "albumId":"116",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33851/Odvootoore-Episode%2012-19%20March%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"506",
+                    "title":"(New)Bhoutiggota 13",
+                    "albumId":"116",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33853/Odvootoore-Episode%2013-27%20March%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                      "composer":"",
+                      "songID":"507",
+                      "title":"(New)Bhoutiggota 6",
+                      "albumId":"116",
+                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                      "path":"http://muzicbd.net/siteuploads/files/sfd68/33809/Bhoutiggota-Episode%2006-05%20March%202020-(MuzicBD.Com).mp3",
+                      "artist":"Bhoutiggota"
+                   },
+                   {
+                      "composer":"",
+                      "songID":"508",
+                      "title":"(New)Bhoutiggota 7",
+                      "albumId":"116",
+                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                      "path":"http://muzicbd.net/siteuploads/files/sfd68/33811/Bhoutiggota-Episode%2007-12%20March%202020-(MuzicBD.Com).mp3",
+                      "artist":"Bhoutiggota"
+                   },
+                   {
+                      "composer":"",
+                      "songID":"509",
+                      "title":"(New)Bhoutiggota 9",
+                      "albumId":"116",
+                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                      "path":"http://muzicbd.net/siteuploads/files/sfd68/33813/Bhoutiggota-Episode%2008-19%20March%202020-(MuzicBD.Com).mp3",
+                      "artist":"Bhoutiggota"
+                   }
+            ]
+         },{
+            "albumName":"April",
+            "songListRange":"439-441",
+            "albumID":"117",
+            "songList":[
+               {
+                    "composer":"",
+                    "songID":"510",
+                    "title":"(New)Odvootoore 14",
+                    "albumId":"117",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33855/Odvootoore-Episode%2014-03%20April%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"511",
+                    "title":"(New)Odvootoore 15",
+                    "albumId":"117",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33857/Odvootoore-Episode%2015-10%20April%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"512",
+                    "title":"(New)Odvootoore 16",
+                    "albumId":"118",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33859/Odvootoore-Episode%2016-17%20April%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },{
+                    "composer":"",
+                    "songID":"513",
+                    "title":"(New)Odvootoore 26",
+                    "albumId":"117",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                    "composer":"",
+                    "songID":"514",
+                    "title":"(New)Odvootoore 17",
+                    "albumId":"117",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd68/33861/Odvootoore-Episode%2017-23%20April%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                 {
+                  "composer":"",
+                  "songID":"515",
+                  "title":"(New)Bhoutiggota 10",
+                  "albumId":"117",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33817/Bhoutiggota-Episode%2010-02%20April%202020-(MuzicBD.Com).mp3",
+                  "artist":"Bhoutiggota"
+               },
+               {
+                  "composer":"",
+                  "songID":"516",
+                  "title":"(New)Bhoutiggota 11",
+                  "albumId":"117",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33819/Bhoutiggota-Episode%2011-09%20April%202020-(MuzicBD.Com).mp3",
+                  "artist":"Bhoutiggota"
+               },
+               {
+                  "composer":"",
+                  "songID":"517",
+                  "title":"(New)Bhoutiggota 12",
+                  "albumId":"117",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33821/Bhoutiggota-Episode%2012-16%20April%202020-(MuzicBD.Com).mp3",
+                  "artist":"Bhoutiggota"
+               },
+               {
+                  "composer":"",
+                  "songID":"518",
+                  "title":"(New)Bhoutiggota 13",
+                  "albumId":"117",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd68/33823/Bhoutiggota-Episode%2013-23%20April%202020-(MuzicBD.Com).mp3",
+                  "artist":"Bhoutiggota"
+               },
+               {
+                  "composer":"",
+                  "songID":"519",
+                  "title":"(New)Bhoutiggota 14",
+                  "albumId":"117",
+                  "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                  "path":"http://muzicbd.net/siteuploads/files/sfd69/34045/Bhoutiggota-Episode%2014-30%20April%202020-(MuzicBD.Com).mp3",
+                  "artist":"Bhoutiggota"
+               }
+            ]
+         },{
+            "albumName":"May",
+            "songListRange":"439-441",
+            "albumID":"118",
+            "songList":[
+
+                                 {
+                                    "composer":"",
+                                    "songID":"520",
+                                    "title":"(New)Odvootoore 18",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd69/34155/Odvootoore-Episode%2018-01%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"521",
+                                    "title":"(New)Odvootoore 19",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd70/34580/Odvootoore-Episode%2019-09%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"522",
+                                    "title":"(New)Odvootoore 20",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd70/34756/Odvootoore-Episode%2020-15%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"523",
+                                    "title":"(New)Odvootoore 21",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35058/Odvootoore-Episode%2021-22%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"524",
+                                    "title":"(New)Odvootoore 22",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35146/Odvootoore-Episode%2022-Eid%20Special-25%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"525",
+                                    "title":"(New)Odvootoore 23",
+                                    "albumId":"118",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35147/Odvootoore-Episode%2023-29%20May%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                 {
+                                      "composer":"",
+                                      "songID":"526",
+                                      "title":"(New)Bhoutiggota 15",
+                                      "albumId":"118",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd69/34389/Bhoutiggota-Episode%2015-07%20May%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"527",
+                                      "title":"(New)Bhoutiggota 16",
+                                      "albumId":"118",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd70/34695/Bhoutiggota-Episode%2016-14%20May%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"528",
+                                      "title":"(New)Bhoutiggota 17",
+                                      "albumId":"118",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35129/Bhoutiggota-Episode%2017-Eid%20Special-25%20May%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"529",
+                                      "title":"(New)Bhoutiggota 18",
+                                      "albumId":"118",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35137/Bhoutiggota-Episode%2018-28%20May%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   }
+            ]
+         },{
+            "albumName":"June",
+            "songListRange":"439-441",
+            "albumID":"119",
+            "songList":[
+               {
+                                    "composer":"",
+                                    "songID":"530",
+                                    "title":"(New)Odvootoore 24",
+                                    "albumId":"119",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35166/Odvootoore-Episode%2024-05%20June%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"531",
+                                    "title":"(New)Odvootoore 25",
+                                    "albumId":"119",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35218/Odvootoore-Episode%2025-12%20June%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"532",
+                                    "title":"(New)Odvootoore 26",
+                                    "albumId":"119",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                                 {
+                                    "composer":"",
+                                    "songID":"533",
+                                    "title":"(New)Odvootoore 27",
+                                    "albumId":"119",
+                                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                    "path":"http://muzicbd.net/siteuploads/files/sfd71/35289/Odvootoore-Episode%2026-19%20June%202020-(MuzicBD.Com).mp3",
+                                    "artist":"Odvootoore"
+                                 },
+                 {
+                                      "composer":"",
+                                      "songID":"534",
+                                      "title":"Bhoutiggota 19",
+                                      "albumId":"119",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35156/Bhoutiggota-Episode%2019-04%20June%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"535",
+                                      "title":"Bhoutiggota 20",
+                                      "albumId":"119",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35174/Bhoutiggota-Episode%2020-11%20June%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"536",
+                                      "title":"Bhoutiggota 21",
+                                      "albumId":"119",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35287/Bhoutiggota-Episode%2021-18%20June%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   },
+                                   {
+                                      "composer":"",
+                                      "songID":"537",
+                                      "title":"(New)Bhoutiggota 22",
+                                      "albumId":"119",
+                                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                                      "path":"http://muzicbd.net/siteuploads/files/sfd71/35322/Bhoutiggota-Episode%2022-25%20June%202020-(MuzicBD.Com).mp3",
+                                      "artist":"Bhoutiggota"
+                                   }
+            ]
+         },{
+            "albumName":"July",
+            "songListRange":"439-441",
+            "albumID":"120",
+            "songList":[
+               {
+                    "composer":"",
+                    "songID":"538",
+                    "title":"(New)Odvootoore 28",
+                    "albumId":"120",
+                    "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                    "path":"http://muzicbd.net/siteuploads/files/sfd72/35601/Odvootoore-Episode%2028-03%20July%202020-(MuzicBD.Com).mp3",
+                    "artist":"Odvootoore"
+                 },
+                {
+                      "composer":"",
+                      "songID":"539",
+                      "title":"(New)Bhoutiggota 23",
+                      "albumId":"120",
+                      "imageUrl":"https://i.imgbox.com/N7KxCTBs.jpg",
+                      "path":"http://muzicbd.net/siteuploads/files/sfd72/35596/Bhoutiggota-Episode%2023-02%20July%202020-(MuzicBD.Com).mp3",
+                      "artist":"Bhoutiggota"
+                   }
+            ]
+         }
          ]
       }
    ]
