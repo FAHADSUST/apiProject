@@ -5625,10 +5625,19 @@
 					{
 						"composer": "",
 						"songID": "539",
-						"title": "(New)Bhoutiggota 23",
+						"title": "Bhoutiggota 23",
 						"albumId": "120",
 						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
 						"path": "http://muzicbd.net/siteuploads/files/sfd72/35596/Bhoutiggota-Episode%2023-02%20July%202020-(MuzicBD.Com).mp3",
+						"artist": "Bhoutiggota"
+					},
+					{
+						"composer": "",
+						"songID": "540",
+						"title": "(New)Bhoutiggota 24",
+						"albumId": "120",
+						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
+						"path": "http://muzicbd.net/siteuploads/files/sfd72/35689/Bhoutiggota-Episode%2024-09%20July%202020-(MuzicBD.Com).mp3",
 						"artist": "Bhoutiggota"
 					}
 				]
