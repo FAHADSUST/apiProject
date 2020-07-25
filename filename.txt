@@ -5651,7 +5651,7 @@
 					{
 						"composer": "",
 						"songID": "542",
-						"title": "(New)Bhoutiggota 25",
+						"title": "Bhoutiggota 25",
 						"albumId": "120",
 						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
 						"path": "http://muzicbd.net/siteuploads/files/sfd72/35840/Bhoutiggota-Episode%2025-16%20July%202020-(MuzicBD.Com).mp3",
@@ -5659,10 +5659,27 @@
 					}, {
                         "composer": "",
                         "songID": "543",
-                        "title": "(New)Odvootoore 30",
+                        "title": "Odvootoore 30",
                         "albumId": "120",
                         "imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
                         "path": "http://muzicbd.net/siteuploads/files/sfd72/35859/Odvootoore-Episode%2030-17%20July%202020-(MuzicBD.Com).mp3",
+                        "artist": "Odvootoore"
+                    },
+					{
+						"composer": "",
+						"songID": "544",
+						"title": "(New)Bhoutiggota 26",
+						"albumId": "120",
+						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
+						"path": "http://muzicbd.net/siteuploads/files/sfd72/35892/Bhoutiggota-Episode%2026-23%20July%202020-(MuzicBD.Com).mp3",
+						"artist": "Bhoutiggota"
+					}, {
+                        "composer": "",
+                        "songID": "545",
+                        "title": "(New)Odvootoore 31",
+                        "albumId": "120",
+                        "imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
+                        "path": "http://muzicbd.net/siteuploads/files/sfd72/35893/Odvootoore-Episode%2031-24%20July%202020-(MuzicBD.Com).mp3",
                         "artist": "Odvootoore"
                     }
 				]
