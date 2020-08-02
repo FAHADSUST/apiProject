@@ -5668,7 +5668,7 @@
 					{
 						"composer": "",
 						"songID": "544",
-						"title": "(New)Bhoutiggota 26",
+						"title": "Bhoutiggota 26",
 						"albumId": "120",
 						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
 						"path": "http://muzicbd.net/siteuploads/files/sfd72/35892/Bhoutiggota-Episode%2026-23%20July%202020-(MuzicBD.Com).mp3",
@@ -5676,12 +5676,34 @@
 					}, {
                         "composer": "",
                         "songID": "545",
-                        "title": "(New)Odvootoore 31",
+                        "title": "Odvootoore 31",
                         "albumId": "120",
                         "imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
                         "path": "http://muzicbd.net/siteuploads/files/sfd72/35893/Odvootoore-Episode%2031-24%20July%202020-(MuzicBD.Com).mp3",
                         "artist": "Odvootoore"
+                    }, {
+                        "composer": "",
+                        "songID": "546",
+                        "title": "(New)Odvootoore 32",
+                        "albumId": "120",
+                        "imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
+                        "path": "http://muzicbd.net/siteuploads/files/sfd73/36009/Odvootoore-Episode%2032-31%20July%202020-(MuzicBD.Com).mp3",
+                        "artist": "Odvootoore"
                     }
+				]
+			}, {
+				"albumName": "August",
+				"songListRange": "439-441",
+				"albumID": "121",
+				"songList": [{
+						"composer": "",
+						"songID": "547",
+						"title": "(New)Bhoutiggota 27",
+						"albumId": "121",
+						"imageUrl": "https://i.imgbox.com/N7KxCTBs.jpg",
+						"path": "http://muzicbd.net/siteuploads/files/sfd73/36033/Bhoutiggota-Eid%20Special%20Episode%20Vol.%201-01%20August%202020-(MuzicBD.Com).mp3",
+						"artist": "Bhoutiggota"
+					}
 				]
 			}]
 		}
